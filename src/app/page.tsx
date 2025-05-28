@@ -5,7 +5,7 @@ import { platforms } from '@/data/mockData';
 import { PlatformRanking } from '@/components/PlatformRanking';
 import { ContentFilter } from '@/components/ContentFilter';
 import { ContentType } from '@/types/movie';
-import { Film, TrendingUp, Database, Zap, Star } from 'lucide-react';
+import { TrendingUp, Database, Zap, Star } from 'lucide-react';
 
 export default function Home() {
   const [selectedContentType, setSelectedContentType] = useState<ContentType | 'all'>('movie');
