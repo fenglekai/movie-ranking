@@ -1,0 +1,29 @@
+# Robots.txt for Movie Ranking Application
+# This file tells web crawlers which parts of our site they can access
+
+User-agent: *
+Allow: /
+
+# Allow access to main content
+Allow: /movies
+Allow: /rankings
+Allow: /api/movies
+Allow: /api/rankings
+
+# Disallow access to admin and private areas
+Disallow: /admin/
+Disallow: /api/admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/internal/
+
+# Allow common files
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+
+# Crawl delay to be respectful to our servers
+Crawl-delay: 1
+
+# Sitemap location (when implemented)
+# Sitemap: https://yourdomain.com/sitemap.xml 

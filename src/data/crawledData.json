@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-05-28T00:40:01.779Z",
+  "lastUpdated": "2025/5/28 08:40:01",
+  "totalMovies": 20,
+  "platforms": 1,
+  "data": {
+    "doubanMovie": [
+      {
+        "id": 1,
+        "title": "直到黎明",
+        "rating": 0,
+        "genre": "美国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 直到黎明",
+        "platform": "douban"
+      },
+      {
+        "id": 2,
+        "title": "我仍在此",
+        "rating": 0,
+        "genre": "巴西",
+        "year": 2024,
+        "description": "豆瓣热门电影 - 我仍在此",
+        "platform": "douban"
+      },
+      {
+        "id": 3,
+        "title": "瓦利斯岛的歌谣",
+        "rating": 0,
+        "genre": "英国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 瓦利斯岛的歌谣",
+        "platform": "douban"
+      },
+      {
+        "id": 4,
+        "title": "海的沉默",
+        "rating": 0,
+        "genre": "日本",
+        "year": 2024,
+        "description": "豆瓣热门电影 - 海的沉默",
+        "platform": "douban"
+      },
+      {
+        "id": 5,
+        "title": "母爱食堂",
+        "rating": 0,
+        "genre": "美国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 母爱食堂",
+        "platform": "douban"
+      },
+      {
+        "id": 6,
+        "title": "丑陋的继姐",
+        "rating": 0,
+        "genre": "挪威",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 丑陋的继姐",
+        "platform": "douban"
+      },
+      {
+        "id": 7,
+        "title": "会计刺客2",
+        "rating": 0,
+        "genre": "美国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 会计刺客2",
+        "platform": "douban"
+      },
+      {
+        "id": 8,
+        "title": "向阳·花",
+        "rating": 0,
+        "genre": "中国大陆",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 向阳·花",
+        "platform": "douban"
+      },
+      {
+        "id": 9,
+        "title": "终极对弈",
+        "rating": 0,
+        "genre": "韩国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 终极对弈",
+        "platform": "douban"
+      },
+      {
+        "id": 10,
+        "title": "战·争",
+        "rating": 0,
+        "genre": "美国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 战·争",
+        "platform": "douban"
+      },
+      {
+        "id": 11,
+        "title": "功夫梦：融合之道",
+        "rating": 0,
+        "genre": "美国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 功夫梦：融合之道",
+        "platform": "douban"
+      },
+      {
+        "id": 12,
+        "title": "猎金·游戏",
+        "rating": 0,
+        "genre": "中国大陆",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 猎金·游戏",
+        "platform": "douban"
+      },
+      {
+        "id": 13,
+        "title": "不说话的爱",
+        "rating": 0,
+        "genre": "中国大陆",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 不说话的爱",
+        "platform": "douban"
+      },
+      {
+        "id": 14,
+        "title": "最后的里程",
+        "rating": 0,
+        "genre": "日本",
+        "year": 2024,
+        "description": "豆瓣热门电影 - 最后的里程",
+        "platform": "douban"
+      },
+      {
+        "id": 15,
+        "title": "昨日青春",
+        "rating": 0,
+        "genre": "日本",
+        "year": 2024,
+        "description": "豆瓣热门电影 - 昨日青春",
+        "platform": "douban"
+      },
+      {
+        "id": 16,
+        "title": "我的世界大电影",
+        "rating": 0,
+        "genre": "美国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 我的世界大电影",
+        "platform": "douban"
+      },
+      {
+        "id": 17,
+        "title": "人生开门红",
+        "rating": 0,
+        "genre": "中国大陆",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 人生开门红",
+        "platform": "douban"
+      },
+      {
+        "id": 18,
+        "title": "秘密会议",
+        "rating": 0,
+        "genre": "英国",
+        "year": 2024,
+        "description": "豆瓣热门电影 - 秘密会议",
+        "platform": "douban"
+      },
+      {
+        "id": 19,
+        "title": "编号17",
+        "rating": 0,
+        "genre": "美国",
+        "year": 2025,
+        "description": "豆瓣热门电影 - 编号17",
+        "platform": "douban"
+      },
+      {
+        "id": 20,
+        "title": "破·地狱",
+        "rating": 0,
+        "genre": "中国香港",
+        "year": 2024,
+        "description": "豆瓣热门电影 - 破·地狱",
+        "platform": "douban"
+      }
+    ]
+  }
+}
