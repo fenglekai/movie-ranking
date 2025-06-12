@@ -14,13 +14,13 @@ const UserAgent = require("user-agents");
 // 平台配置
 const platforms = {
   // 未成功的爬取
-  // iqiyi: {
-  //   name: '爱奇艺',
-  //   url: 'https://www.iqiyi.com/dianying/',
-  //   selector: '.site-piclist_pic_link',
-  //   useHeadless: true,
-  //   waitTime: 3000
-  // },
+  iqiyi: {
+    name: '爱奇艺',
+    url: 'https://www.iqiyi.com/dianying/',
+    selector: '.site-piclist_pic_link',
+    useHeadless: true,
+    waitTime: 3000
+  },
   // youku: {
   //   name: '优酷',
   //   url: 'https://www.youku.com/channel/webmovie',
@@ -55,14 +55,14 @@ const platforms = {
   //   name: "豆瓣剧集",
   //   url: "https://movie.douban.com/tv",
   //   selector: ".drc-subject-info",
-  //   useHeadless: false,
+  //   useHeadless: true,
   //   waitTime: 5000,
   // },
   // doubanVarietyShow: {
   //   name: "豆瓣综艺",
   //   url: "https://movie.douban.com/tv",
   //   selector: ".drc-subject-info",
-  //   useHeadless: false,
+  //   useHeadless: true,
   //   waitTime: 5000,
   // },
 };
