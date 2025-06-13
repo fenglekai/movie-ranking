@@ -17,69 +17,57 @@ const platforms = {
   // youku: {
   //   name: '优酷',
   //   url: 'https://www.youku.com/channel/webmovie',
-  //   selector: '.p-thumb',
   //   useHeadless: true,
   // },
   // mango: {
   //   name: '芒果TV',
   //   url: 'https://www.mgtv.com/channel/movie',
-  //   selector: '.video-item',
   //   useHeadless: true,
   // },
-
   // 已经成功的爬取
   // tencentTV: {
   //   name: "腾讯视频剧集",
   //   url: "https://v.qq.com/biu/ranks/",
-  //   selector: ".item.item_odd.item_1",
   //   useHeadless: true,
   // },
   // tencentMovie: {
   //   name: "腾讯视频电影",
   //   url: "https://v.qq.com/biu/ranks/",
-  //   selector: ".item.item_odd.item_1",
   //   useHeadless: true,
   // },
   // tencentShow: {
   //   name: "腾讯视频综艺",
   //   url: "https://v.qq.com/biu/ranks/",
-  //   selector: ".item.item_odd.item_1",
   //   useHeadless: true,
   // },
   // iqiyiTV: {
   //   name: "爱奇艺剧集",
   //   url: "https://www.iqiyi.com/trending/",
-  //   selector: ".rvi__box",
   //   useHeadless: true,
   // },
   // iqiyiMovie: {
   //   name: "爱奇艺电影",
   //   url: "https://www.iqiyi.com/trending/",
-  //   selector: ".rvi__box",
   //   useHeadless: true,
   // },
   // iqiyiShow: {
   //   name: "爱奇艺综艺",
   //   url: "https://www.iqiyi.com/trending/",
-  //   selector: ".rvi__box",
   //   useHeadless: true,
   // },
   // doubanMovie: {
   //   name: "豆瓣电影",
   //   url: "https://movie.douban.com/explore",
-  //   selector: ".drc-subject-info",
   //   useHeadless: true,
   // },
   // doubanTV: {
   //   name: "豆瓣剧集",
   //   url: "https://movie.douban.com/tv",
-  //   selector: ".drc-subject-info",
   //   useHeadless: true,
   // },
   // doubanShow: {
   //   name: "豆瓣综艺",
   //   url: "https://movie.douban.com/tv",
-  //   selector: ".drc-subject-info",
   //   useHeadless: true,
   // },
 };
@@ -146,90 +134,85 @@ async function checkRobotsTxt(baseUrl, targetPath = "/") {
 /**
  * 解析豆瓣平台数据
  * @param {Object} page puppeteer页面对象
- * @param {string} selector CSS选择器
  * @param {string} platformId 平台ID
  * @returns {Array} 电影数据数组
  */
-async function parseDoubanPlatform(page, selector, platformId) {
-  const movies = await page.evaluate(
-    (selector, platformId) => {
-      const elements = document.querySelectorAll('.subject-list-list li');
-      const results = [];
+async function parseDoubanPlatform(page, platformId) {
+  const movies = await page.evaluate((platformId) => {
+    const elements = document.querySelectorAll(".subject-list-list li");
+    const results = [];
 
-      console.log(`🎯 使用选择器: .subject-list-list li, 找到 ${elements.length} 个元素`);
-      elements.forEach((element, index) => {
-        try {
-          // 获取链接
-          const link = element.querySelector('a');
-          const url = link ? link.href : "";
+    console.log(
+      `🎯 使用选择器: .subject-list-list li, 找到 ${elements.length} 个元素`
+    );
+    elements.forEach((element, index) => {
+      try {
+        // 获取链接
+        const link = element.querySelector("a");
+        const url = link ? link.href : "";
 
-          // 获取标题
-          const titleElement = element.querySelector(
-            ".drc-subject-info-title-text"
-          );
-          let title = titleElement ? titleElement.textContent.trim() : "";
+        // 获取标题
+        const titleElement = element.querySelector(
+          ".drc-subject-info-title-text"
+        );
+        let title = titleElement ? titleElement.textContent.trim() : "";
 
-          // 清理标题中的多余字符
-          title = title.replace(/^\d+\.?\s*/, "").trim(); // 移除开头的数字
-          title = title.split("\n")[0].trim(); // 取第一行作为标题
+        // 清理标题中的多余字符
+        title = title.replace(/^\d+\.?\s*/, "").trim(); // 移除开头的数字
+        title = title.split("\n")[0].trim(); // 取第一行作为标题
 
-          // 获取评分
-          const ratingElement = element.querySelector(".drc-rating-num");
-          const ratingText = ratingElement
-            ? ratingElement.textContent.trim()
-            : "";
-          const rating =
-            ratingText && ratingText !== "暂无评分"
-              ? parseFloat(ratingText)
-              : "-";
+        // 获取评分
+        const ratingElement = element.querySelector(".drc-rating-num");
+        const ratingText = ratingElement
+          ? ratingElement.textContent.trim()
+          : "";
+        const rating =
+          ratingText && ratingText !== "暂无评分"
+            ? parseFloat(ratingText)
+            : "-";
 
-          // 获取详细信息
-          const infoElement = element.querySelector(
-            ".drc-subject-info-subtitle"
-          );
-          const info = infoElement ? infoElement.textContent.trim() : "";
+        // 获取详细信息
+        const infoElement = element.querySelector(".drc-subject-info-subtitle");
+        const info = infoElement ? infoElement.textContent.trim() : "";
 
-          // 拆分信息 [0] 年份 [1] 国家 [2] 类型 [3] 导演 [4] 演员
-          const infoFormat = info.split(" / ");
+        // 拆分信息 [0] 年份 [1] 国家 [2] 类型 [3] 导演 [4] 演员
+        const infoFormat = info.split(" / ");
 
-          // 提取年份
-          const year = infoFormat[0]
-            ? parseInt(infoFormat[0])
-            : new Date().getFullYear();
+        // 提取年份
+        const year = infoFormat[0]
+          ? parseInt(infoFormat[0])
+          : new Date().getFullYear();
 
-          // 提取类型
-          const genre = infoFormat[2] ? infoFormat[2].trim().split(" ") : [];
+        // 提取类型
+        const genre = infoFormat[2] ? infoFormat[2].trim().split(" ") : [];
 
-          // 提取导演
-          const director = infoFormat.slice(3, 4);
+        // 提取导演
+        const director = infoFormat.slice(3, 4);
 
-          // 提取演员
-          const actor = infoFormat.slice(4, 5);
+        // 提取演员
+        const actor = infoFormat.slice(4, 5);
 
-          if (title && title.length > 1 && index < 20) {
-            // 限制数量并确保标题有效
-            results.push({
-              id: index + 1,
-              url,
-              title,
-              hot: null,
-              rating: Math.round(rating * 10) / 10, // 保留一位小数
-              genre,
-              year,
-              description: `导演：${director} 演员：${actor}`,
-              platform: platformId,
-            });
-          }
-        } catch (error) {
-          console.error("解析豆瓣平台数据时出错:", error);
+        if (title && title.length > 1 && index < 20) {
+          // 限制数量并确保标题有效
+          results.push({
+            id: index + 1,
+            url,
+            title,
+            hot: null,
+            rating: Math.round(rating * 10) / 10, // 保留一位小数
+            genre,
+            year,
+            description: `导演：${director} 演员：${actor}`,
+            platform: platformId,
+          });
         }
-      });
+      } catch (error) {
+        console.error("解析豆瓣平台数据时出错:", error);
+      }
+    });
 
-      return results;
-    },
-    selector,
-    platformId
-  );
+    return results;
+  }, platformId);
 
   console.log(`✅ 成功解析到 ${movies.length} 部`);
   return movies;
@@ -238,11 +221,10 @@ async function parseDoubanPlatform(page, selector, platformId) {
 /**
  * 解析豆瓣综艺数据（需要先点击标签）
  * @param {Object} page puppeteer页面对象
- * @param {string} selector CSS选择器
  * @param {string} platformId 平台ID
  * @returns {Array} 综艺数据数组
  */
-async function parsedoubanShow(page, selector, platformId) {
+async function parsedoubanShow(page, platformId) {
   try {
     console.log("🎪 点击豆瓣综艺标签...");
 
@@ -277,102 +259,87 @@ async function parsedoubanShow(page, selector, platformId) {
     console.log("⏳ 等待综艺数据加载...");
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    // 等待新内容加载（可以根据实际页面调整选择器）
-    try {
-      await page.waitForSelector(selector, { timeout: 10000 });
-      console.log("✅ 检测到新内容已加载");
-    } catch (error) {
-      console.log("⚠️  等待新内容超时，继续进行数据解析");
-    }
-
     // 解析数据
-    const movies = await parseDoubanPlatform(page, selector, platformId);
+    const movies = await parseDoubanPlatform(page, platformId);
     return movies;
   } catch (error) {
     console.error("❌ 处理豆瓣综艺数据时出错:", error);
     // 如果出错，回退到普通解析
-    return await parseDoubanPlatform(page, selector, platformId);
+    return await parseDoubanPlatform(page, platformId);
   }
 }
 
 /**
  * 解析爱奇艺平台数据
  * @param {Object} page puppeteer页面对象
- * @param {string} selector CSS选择器
  * @param {string} platformId 平台ID
  * @returns {Array} 电影数据数组
  */
-async function parseIqiyiPlatform(page, selector, platformId) {
-  const movies = await page.evaluate(
-    (selector, platformId) => {
-      const elements = document.querySelectorAll('.rvi__list a');
-      const results = [];
+async function parseIqiyiPlatform(page, platformId) {
+  const movies = await page.evaluate((platformId) => {
+    const elements = document.querySelectorAll(".rvi__list a");
+    const results = [];
 
-      console.log(`🎯 使用选择器: .rvi__list a, 找到 ${elements.length} 个元素`);
+    console.log(`🎯 使用选择器: .rvi__list a, 找到 ${elements.length} 个元素`);
 
-      elements.forEach((element, index) => {
-        try {
-          // 获取链接
-          const url = element ? element.href : "";
+    elements.forEach((element, index) => {
+      try {
+        // 获取链接
+        const url = element ? element.href : "";
 
-          // 获取标题
-          const titleElement = element.querySelector(".rvi__tit1");
-          const title = titleElement
-            ? titleElement.textContent
-                .trim()
-                .replace((index + 1).toString(), "")
-            : "";
+        // 获取标题
+        const titleElement = element.querySelector(".rvi__tit1");
+        const title = titleElement
+          ? titleElement.textContent.trim().replace((index + 1).toString(), "")
+          : "";
 
-          // 获取热度
-          const hotElement = element.querySelector(".rvi__index__num");
-          const hot = hotElement ? hotElement.textContent.trim() : "";
+        // 获取热度
+        const hotElement = element.querySelector(".rvi__index__num");
+        const hot = hotElement ? hotElement.textContent.trim() : "";
 
-          // 获取详细信息
-          const infoElement = element.querySelector(".rvi__type1");
-          const info = infoElement ? infoElement.textContent.trim() : "";
+        // 获取详细信息
+        const infoElement = element.querySelector(".rvi__type1");
+        const info = infoElement ? infoElement.textContent.trim() : "";
 
-          // 拆分信息 [0] 年份 [1] 类型 [2] 演员
-          const infoFormat = info.split(" / ");
+        // 拆分信息 [0] 年份 [1] 类型 [2] 演员
+        const infoFormat = info.split(" / ");
 
-          // 提取年份
-          const year = infoFormat[0]
-            ? parseInt(infoFormat[0])
-            : new Date().getFullYear();
+        // 提取年份
+        const year = infoFormat[0]
+          ? parseInt(infoFormat[0])
+          : new Date().getFullYear();
 
-          // 提取类型
-          const genre = infoFormat[1];
+        // 提取类型
+        const genre = infoFormat[1];
 
-          // 提取演员
-          const actor = infoFormat[2];
+        // 提取演员
+        const actor = infoFormat[2];
 
-          // 获取描述
-          const desElement = element.querySelector(".rvi__des2");
-          const des = desElement ? desElement.textContent.trim() : "";
+        // 获取描述
+        const desElement = element.querySelector(".rvi__des2");
+        const des = desElement ? desElement.textContent.trim() : "";
 
-          if (title && title.length > 1 && index < 20) {
-            // 限制数量并确保标题有效
-            results.push({
-              id: index + 1,
-              url,
-              title,
-              hot,
-              rating: null,
-              genre,
-              year,
-              description: `演员：${actor} 简介：${des}`,
-              platform: platformId,
-            });
-          }
-        } catch (error) {
-          console.error("解析爱奇艺平台数据时出错:", error);
+        if (title && title.length > 1 && index < 20) {
+          // 限制数量并确保标题有效
+          results.push({
+            id: index + 1,
+            url,
+            title,
+            hot,
+            rating: null,
+            genre,
+            year,
+            description: `演员：${actor} 简介：${des}`,
+            platform: platformId,
+          });
         }
-      });
+      } catch (error) {
+        console.error("解析爱奇艺平台数据时出错:", error);
+      }
+    });
 
-      return results;
-    },
-    selector,
-    platformId
-  );
+    return results;
+  }, platformId);
 
   console.log(`✅ 成功解析到 ${movies.length} 部`);
   return movies;
@@ -381,11 +348,10 @@ async function parseIqiyiPlatform(page, selector, platformId) {
 /**
  * 爱奇艺选择Tag
  * @param {Object} page puppeteer页面对象
- * @param {string} selector CSS选择器
  * @param {string} platformId 平台ID
  * @returns {Array} 数据数组
  */
-async function chooseIqiyiTag(page, selector, platformId, tagIndex) {
+async function chooseIqiyiTag(page, platformId, tagIndex) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
   console.log("🎪 进入iframe标签...");
   let iframeElementHandle = await page.$('iframe[class="iframe"]');
@@ -409,18 +375,17 @@ async function chooseIqiyiTag(page, selector, platformId, tagIndex) {
   iframeElementHandle = await page.$('iframe[class="iframe"]');
   iframe = await iframeElementHandle.contentFrame();
 
-  const movies = await parseIqiyiPlatform(iframe, selector, platformId);
+  const movies = await parseIqiyiPlatform(iframe, platformId);
   return movies;
 }
 
 /**
  * 解析腾讯视频平台数据
  * @param {Object} page puppeteer页面对象
- * @param {string} selector CSS选择器
  * @param {string} platformId 平台ID
  * @returns {Array} 数据数组
  */
-async function parseTencentPlatform(page, selector, platformId) {
+async function parseTencentPlatform(page, platformId) {
   let movies = [];
   const modElements = await page.$$(".mod_rank_figure");
   const titleDict = {
@@ -439,17 +404,17 @@ async function parseTencentPlatform(page, selector, platformId) {
 
     movies = await mod.$eval(
       ".hotlist",
-      (list, selector, platformId) => {
+      (list, platformId) => {
         const results = [];
         try {
-          const elements = list.querySelectorAll(selector);
+          const elements = list.querySelectorAll(".item.item_odd.item_1");
           console.log(
-            `🎯 使用选择器: ${selector}, 找到 ${elements.length} 个元素`
+            `🎯 使用选择器: .item.item_odd.item_1, 找到 ${elements.length} 个元素`
           );
 
           elements.forEach((element, index) => {
             // 获取链接
-            const link = element.querySelector('a');
+            const link = element.querySelector("a");
             const url = link ? link.href : "";
 
             // 获取标题
@@ -480,7 +445,6 @@ async function parseTencentPlatform(page, selector, platformId) {
         }
         return results;
       },
-      selector,
       platformId
     );
   }
@@ -594,27 +558,23 @@ async function crawlPlatform(platformId) {
       switch (platformId) {
         case "doubanMovie":
         case "doubanTV":
-          movies = await parseDoubanPlatform(
-            page,
-            platform.selector,
-            platformId
-          );
+          movies = await parseDoubanPlatform(page, platformId);
           break;
 
         case "doubanShow":
-          movies = await parsedoubanShow(page, platform.selector, platformId);
+          movies = await parsedoubanShow(page, platformId);
           break;
 
         case "iqiyiTV":
-          movies = await chooseIqiyiTag(page, platform.selector, platformId, 2);
+          movies = await chooseIqiyiTag(page, platformId, 2);
           break;
 
         case "iqiyiMovie":
-          movies = await chooseIqiyiTag(page, platform.selector, platformId, 4);
+          movies = await chooseIqiyiTag(page, platformId, 4);
           break;
 
         case "iqiyiShow":
-          movies = await chooseIqiyiTag(page, platform.selector, platformId, 5);
+          movies = await chooseIqiyiTag(page, platformId, 5);
           break;
 
         case "tencentTV":
@@ -622,7 +582,7 @@ async function crawlPlatform(platformId) {
         case "tencentShow":
           movies = await parseTencentPlatform(
             page,
-            platform.selector,
+
             platformId
           );
           break;
