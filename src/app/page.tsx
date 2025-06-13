@@ -1,42 +1,37 @@
 'use client';
 
 import { useState } from 'react';
-import { platforms } from '@/data/mockData';
+import { getAllPlatforms, getCrawledDataStats } from '@/data/crawledDataAdapter';
 import { PlatformRanking } from '@/components/PlatformRanking';
 import { ContentFilter } from '@/components/ContentFilter';
 import { ContentType } from '@/types/movie';
-import { TrendingUp, Database, Zap, Star } from 'lucide-react';
+import { Zap, Star } from 'lucide-react';
 
 export default function Home() {
-  const [selectedContentType, setSelectedContentType] = useState<ContentType | 'all'>('movie');
+  const [selectedContentType, setSelectedContentType] = useState<ContentType>('tv');
+  const platforms = getAllPlatforms();
+  const stats = getCrawledDataStats();
+  
+
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen bg-background">
       {/* 页面头部 */}
       <header className="border-b bg-card sticky top-0 z-50 backdrop-blur-sm bg-card/95">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  热榜追踪器
-                </h1>
-                <p className="text-sm text-muted-foreground hidden sm:block">
-                  <Star className="w-3 h-3 inline mr-1" />
-                  发现最热门的影视内容
-                </p>
-              </div>
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
+              <Zap className="w-6 h-6 text-white" />
             </div>
-            <a
-              href="/admin"
-              className="flex items-center gap-2 px-3 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-colors text-sm"
-            >
-              <Database className="w-4 h-4" />
-              <span className="hidden sm:inline">管理后台</span>
-            </a>
+            <div>
+              <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                热榜追踪器
+              </h1>
+              <p className="text-sm text-muted-foreground hidden sm:block">
+                <Star className="w-3 h-3 inline mr-1" />
+                发现最热门的影视内容
+              </p>
+            </div>
           </div>
         </div>
         
@@ -53,35 +48,15 @@ export default function Home() {
 
       {/* 主要内容 */}
       <main className="container mx-auto px-4 py-6 pb-20 md:pb-6">
-        {/* 统计信息 */}
-        <div className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <TrendingUp className="w-5 h-5 text-primary" />
-            <h2 className="text-xl font-semibold">平台热度</h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
-            {platforms.map((platform) => (
-              <div
-                key={platform.id}
-                className="flex items-center gap-2 p-3 bg-card rounded-lg border hover:shadow-md transition-shadow"
-              >
-                <div className={`w-8 h-8 rounded ${platform.color} flex items-center justify-center text-white text-sm`}>
-                  {platform.logo}
-                </div>
-                <span className="font-medium text-sm">{platform.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* 排行榜网格 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {/* 排行榜网格 - 使用flex布局避免高度空白问题 */}
+        <div className="flex flex-wrap gap-6 justify-center">
           {platforms.map((platform) => (
-            <PlatformRanking 
-              key={platform.id} 
-              platform={platform} 
-              selectedContentType={selectedContentType}
-            />
+            <div key={platform.id} className="w-full md:w-[calc(50%-12px)] xl:w-[calc(33.333%-16px)] min-w-[300px] flex-shrink-0">
+              <PlatformRanking 
+                platform={platform} 
+                selectedContentType={selectedContentType}
+              />
+            </div>
           ))}
         </div>
       </main>
@@ -101,7 +76,12 @@ export default function Home() {
         <div className="container mx-auto px-4 py-6">
           <div className="text-center text-muted-foreground">
             <p>© 2024 热榜追踪器 - 数据来源于各大视频平台</p>
-            <p className="text-sm mt-1">实时追踪热门内容</p>
+            <p className="text-sm mt-1">
+              共收录 {stats.totalMovies} 部作品，覆盖 {stats.platforms} 个平台
+            </p>
+            <p className="text-xs mt-1 opacity-70">
+              最后更新：{stats.lastUpdated}
+            </p>
           </div>
         </div>
       </footer>

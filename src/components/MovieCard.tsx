@@ -89,7 +89,7 @@ export function MovieCard({ movie, rank }: MovieCardProps) {
         </div>
 
         {/* 描述 */}
-        <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+        <p className="text-sm text-muted-foreground line-clamp-1 leading-relaxed">
           {movie.description}
         </p>
       </div>

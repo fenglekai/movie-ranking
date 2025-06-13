@@ -2,13 +2,13 @@ import { ContentType } from '@/types/movie';
 import { Film, Tv, Mic } from 'lucide-react';
 
 interface ContentFilterProps {
-  selectedType: ContentType | 'all';
-  onTypeChange: (type: ContentType | 'all') => void;
+  selectedType: ContentType;
+  onTypeChange: (type: ContentType) => void;
 }
 
 const filterOptions = [
-  { value: 'movie' as const, label: '电影', icon: Film, shortLabel: '电影' },
   { value: 'tv' as const, label: '电视剧', icon: Tv, shortLabel: '剧集' },
+  { value: 'movie' as const, label: '电影', icon: Film, shortLabel: '电影' },
   { value: 'variety' as const, label: '综艺', icon: Mic, shortLabel: '综艺' },
 ];
 
