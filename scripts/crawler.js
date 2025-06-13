@@ -153,13 +153,16 @@ async function checkRobotsTxt(baseUrl, targetPath = "/") {
 async function parseDoubanPlatform(page, selector, platformId) {
   const movies = await page.evaluate(
     (selector, platformId) => {
-      const elements = document.querySelectorAll(selector);
+      const elements = document.querySelectorAll('.subject-list-list li');
       const results = [];
 
-      console.log(`🎯 使用选择器: ${selector}, 找到 ${elements.length} 个元素`);
-
+      console.log(`🎯 使用选择器: .subject-list-list li, 找到 ${elements.length} 个元素`);
       elements.forEach((element, index) => {
         try {
+          // 获取链接
+          const link = element.querySelector('a');
+          const url = link ? link.href : "";
+
           // 获取标题
           const titleElement = element.querySelector(
             ".drc-subject-info-title-text"
@@ -207,6 +210,7 @@ async function parseDoubanPlatform(page, selector, platformId) {
             // 限制数量并确保标题有效
             results.push({
               id: index + 1,
+              url,
               title,
               hot: null,
               rating: Math.round(rating * 10) / 10, // 保留一位小数
@@ -301,13 +305,16 @@ async function parsedoubanShow(page, selector, platformId) {
 async function parseIqiyiPlatform(page, selector, platformId) {
   const movies = await page.evaluate(
     (selector, platformId) => {
-      const elements = document.querySelectorAll(selector);
+      const elements = document.querySelectorAll('.rvi__list a');
       const results = [];
 
-      console.log(`🎯 使用选择器: ${selector}, 找到 ${elements.length} 个元素`);
+      console.log(`🎯 使用选择器: .rvi__list a, 找到 ${elements.length} 个元素`);
 
       elements.forEach((element, index) => {
         try {
+          // 获取链接
+          const url = element ? element.href : "";
+
           // 获取标题
           const titleElement = element.querySelector(".rvi__tit1");
           const title = titleElement
@@ -346,6 +353,7 @@ async function parseIqiyiPlatform(page, selector, platformId) {
             // 限制数量并确保标题有效
             results.push({
               id: index + 1,
+              url,
               title,
               hot,
               rating: null,
@@ -378,25 +386,26 @@ async function parseIqiyiPlatform(page, selector, platformId) {
  * @returns {Array} 数据数组
  */
 async function chooseIqiyiTag(page, selector, platformId, tagIndex) {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   console.log("🎪 进入iframe标签...");
   let iframeElementHandle = await page.$('iframe[class="iframe"]');
   let iframe = await iframeElementHandle.contentFrame();
 
   console.log("🎪 点击热播总榜标签...");
-  const gclElements = await iframe.$$(".gcl__in.gcl__in--hover");
+  let gclElements = await iframe.$$(".gcl__con");
   await gclElements[0].click();
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 
   console.log("🎪 进入iframe标签...");
-  await new Promise((resolve) => setTimeout(resolve, 3000));
   iframeElementHandle = await page.$('iframe[class="iframe"]');
   iframe = await iframeElementHandle.contentFrame();
 
   console.log("🎪 点击分类标签...");
-  const rtabElements = await iframe.$$(".rtab__slider__link");
+  let rtabElements = await iframe.$$(".rtab__slider__link");
   await rtabElements[tagIndex].click();
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 
   console.log("🎪 进入iframe标签...");
-  await new Promise((resolve) => setTimeout(resolve, 3000));
   iframeElementHandle = await page.$('iframe[class="iframe"]');
   iframe = await iframeElementHandle.contentFrame();
 
@@ -439,6 +448,10 @@ async function parseTencentPlatform(page, selector, platformId) {
           );
 
           elements.forEach((element, index) => {
+            // 获取链接
+            const link = element.querySelector('a');
+            const url = link ? link.href : "";
+
             // 获取标题
             const titleElement = element.querySelector(".name");
             const title = titleElement
@@ -451,6 +464,7 @@ async function parseTencentPlatform(page, selector, platformId) {
               // 限制数量并确保标题有效
               results.push({
                 id: index + 1,
+                url,
                 title,
                 hot: null,
                 rating: null,
@@ -568,7 +582,7 @@ async function crawlPlatform(platformId) {
 
       // 导航到页面
       await page.goto(platform.url, {
-        waitUntil: "domcontentloaded",
+        waitUntil: "networkidle2",
         timeout: 30000,
       });
 
