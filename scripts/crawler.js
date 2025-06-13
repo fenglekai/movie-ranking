@@ -25,51 +25,51 @@ const platforms = {
   //   useHeadless: true,
   // },
   // 已经成功的爬取
-  // tencentTV: {
-  //   name: "腾讯视频剧集",
-  //   url: "https://v.qq.com/biu/ranks/",
-  //   useHeadless: true,
-  // },
-  // tencentMovie: {
-  //   name: "腾讯视频电影",
-  //   url: "https://v.qq.com/biu/ranks/",
-  //   useHeadless: true,
-  // },
-  // tencentShow: {
-  //   name: "腾讯视频综艺",
-  //   url: "https://v.qq.com/biu/ranks/",
-  //   useHeadless: true,
-  // },
-  // iqiyiTV: {
-  //   name: "爱奇艺剧集",
-  //   url: "https://www.iqiyi.com/trending/",
-  //   useHeadless: true,
-  // },
-  // iqiyiMovie: {
-  //   name: "爱奇艺电影",
-  //   url: "https://www.iqiyi.com/trending/",
-  //   useHeadless: true,
-  // },
-  // iqiyiShow: {
-  //   name: "爱奇艺综艺",
-  //   url: "https://www.iqiyi.com/trending/",
-  //   useHeadless: true,
-  // },
-  // doubanMovie: {
-  //   name: "豆瓣电影",
-  //   url: "https://movie.douban.com/explore",
-  //   useHeadless: true,
-  // },
-  // doubanTV: {
-  //   name: "豆瓣剧集",
-  //   url: "https://movie.douban.com/tv",
-  //   useHeadless: true,
-  // },
-  // doubanShow: {
-  //   name: "豆瓣综艺",
-  //   url: "https://movie.douban.com/tv",
-  //   useHeadless: true,
-  // },
+  tencentTV: {
+    name: "腾讯视频剧集",
+    url: "https://v.qq.com/biu/ranks/",
+    useHeadless: true,
+  },
+  tencentMovie: {
+    name: "腾讯视频电影",
+    url: "https://v.qq.com/biu/ranks/",
+    useHeadless: true,
+  },
+  tencentShow: {
+    name: "腾讯视频综艺",
+    url: "https://v.qq.com/biu/ranks/",
+    useHeadless: true,
+  },
+  iqiyiTV: {
+    name: "爱奇艺剧集",
+    url: "https://www.iqiyi.com/trending/",
+    useHeadless: true,
+  },
+  iqiyiMovie: {
+    name: "爱奇艺电影",
+    url: "https://www.iqiyi.com/trending/",
+    useHeadless: true,
+  },
+  iqiyiShow: {
+    name: "爱奇艺综艺",
+    url: "https://www.iqiyi.com/trending/",
+    useHeadless: true,
+  },
+  doubanMovie: {
+    name: "豆瓣电影",
+    url: "https://movie.douban.com/explore",
+    useHeadless: true,
+  },
+  doubanTV: {
+    name: "豆瓣剧集",
+    url: "https://movie.douban.com/tv",
+    useHeadless: true,
+  },
+  doubanShow: {
+    name: "豆瓣综艺",
+    url: "https://movie.douban.com/tv",
+    useHeadless: true,
+  },
 };
 
 /**
@@ -186,11 +186,18 @@ async function parseDoubanPlatform(page, platformId) {
         // 提取类型
         const genre = infoFormat[2] ? infoFormat[2].trim().split(" ") : [];
 
-        // 提取导演
-        const director = infoFormat.slice(3, 4);
-
-        // 提取演员
-        const actor = infoFormat.slice(4, 5);
+        let director = ''
+        let actor = ''
+        // 判断导演是否存在
+        if (infoFormat.length === 5) {
+          // 提取导演
+          director = infoFormat[3];
+  
+          // 提取演员
+          actor = infoFormat[4];
+        } else {
+          actor = infoFormat[3];
+        }
 
         if (title && title.length > 1 && index < 20) {
           // 限制数量并确保标题有效
@@ -202,7 +209,7 @@ async function parseDoubanPlatform(page, platformId) {
             rating: Math.round(rating * 10) / 10, // 保留一位小数
             genre,
             year,
-            description: `导演：${director} 演员：${actor}`,
+            description: `演员：${actor} 导演：${director ? director : '暂无'}`,
             platform: platformId,
           });
         }
