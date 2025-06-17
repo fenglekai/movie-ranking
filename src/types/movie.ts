@@ -2,6 +2,7 @@ export type ContentType = 'movie' | 'tv' | 'variety';
 
 export interface Movie {
   id: number;
+  url: string;
   title: string;
   poster: string;
   rating: number;
@@ -11,6 +12,7 @@ export interface Movie {
   type: ContentType;
   episodes?: number; // 电视剧集数
   status?: string; // 更新状态：完结、更新中等
+  hot?: string | number; // 热度值
 }
 
 export interface Platform {

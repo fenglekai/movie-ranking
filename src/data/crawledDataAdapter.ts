@@ -119,6 +119,7 @@ function convertCrawledDataToMovie(item: CrawledDataItem, platformKey: string): 
   
   return {
     id: uniqueId,
+    url: item.url || '#', // 添加url字段，如果没有则使用默认值
     title: item.title || '未知标题',
     poster: '/placeholder-movie.svg', // 使用默认占位图
     rating: rating,
@@ -127,7 +128,8 @@ function convertCrawledDataToMovie(item: CrawledDataItem, platformKey: string): 
     description: item.description || `${item.title} - 来自${platformName}`,
     type: contentType,
     episodes: item.episodes,
-    status: item.status
+    status: item.status,
+    hot: item.hot || undefined // 添加热度字段，将null转换为undefined
   };
 }
 

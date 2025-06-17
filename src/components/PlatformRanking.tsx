@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Platform, Movie, ContentType } from '@/types/movie';
 import { MovieCard } from './MovieCard';
 import { fetchPlatformData } from '@/data/crawledDataAdapter';
-import { Loader2, Trophy, ChevronDown, ChevronUp } from 'lucide-react';
+import { Loader2, Trophy } from 'lucide-react';
 
 interface PlatformRankingProps {
   platform: Platform;
@@ -14,7 +14,6 @@ interface PlatformRankingProps {
 export function PlatformRanking({ platform, selectedContentType }: PlatformRankingProps) {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState(true);
-  const [expanded, setExpanded] = useState(false);
 
   // 过滤电影列表
   const filteredMovies = useMemo(() => {
@@ -36,11 +35,6 @@ export function PlatformRanking({ platform, selectedContentType }: PlatformRanki
     loadData();
   }, [loadData]);
 
-  // 当内容类型改变时，重置展开状态
-  useEffect(() => {
-    setExpanded(false);
-  }, [selectedContentType]);
-
   return (
     <div className="bg-card rounded-xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
       {/* 头部 */}
@@ -52,7 +46,7 @@ export function PlatformRanking({ platform, selectedContentType }: PlatformRanki
             <div>
               <h3 className="text-lg font-bold flex items-center gap-2">
                 <Trophy className="w-4 h-4 text-yellow-500" />
-                {platform.name} 热播榜
+                {platform.name}
               </h3>
               <p className="text-xs text-muted-foreground">
                 共 {filteredMovies.length} 部作品
@@ -61,8 +55,8 @@ export function PlatformRanking({ platform, selectedContentType }: PlatformRanki
           </div>
       </div>
 
-      {/* 内容区域 */}
-      <div className="bg-background/50 flex-1 flex flex-col">
+      {/* 内容区域 - 添加滚动条 */}
+      <div className="bg-background/50 flex-1 overflow-y-auto">
         {loading ? (
           <div className="flex items-center justify-center py-12">
             <div className="flex flex-col items-center gap-3">
@@ -90,8 +84,8 @@ export function PlatformRanking({ platform, selectedContentType }: PlatformRanki
             </div>
           </div>
         ) : (
-          <div className="divide-y divide-border/30">
-            {(expanded ? filteredMovies : filteredMovies.slice(0, 10)).map((movie, index) => (
+          <div className="divide-y divide-border/30" style={{ height: 'calc(100vh - 320px)' }}>
+            {filteredMovies.map((movie, index) => (
               <MovieCard
                 key={`${movie.id}-${index}`}
                 movie={movie}
@@ -102,24 +96,13 @@ export function PlatformRanking({ platform, selectedContentType }: PlatformRanki
         )}
       </div>
 
-      {/* 底部 */}
+      {/* 底部统计信息 */}
       {filteredMovies.length > 0 && (
-        <div 
-          className={`sticky bottom-0 px-6 py-3 bg-muted/20 border-t flex-shrink-0 ${filteredMovies.length > 10 ? 'cursor-pointer hover:bg-muted/30 transition-colors' : ''}`}
-          onClick={() => filteredMovies.length > 10 && setExpanded(!expanded)}
-        >
+        <div className="px-6 py-3 bg-muted/20 border-t flex-shrink-0">
           <div className="flex items-center justify-center gap-2">
             <p className="text-xs text-muted-foreground">
-              {expanded ? '收起' : '共'} {filteredMovies.length} 部作品
-              {!expanded && filteredMovies.length > 10 && '，显示前10部'}
+              共 {filteredMovies.length} 部作品
             </p>
-            {filteredMovies.length > 10 && (
-              expanded ? (
-                <ChevronUp className="w-3 h-3 text-muted-foreground" />
-              ) : (
-                <ChevronDown className="w-3 h-3 text-muted-foreground" />
-              )
-            )}
           </div>
         </div>
       )}
