@@ -8,16 +8,19 @@
     "start": "next start",
     "lint": "next lint",
     "crawler": "node scripts/crawler.js",
-    "crawler:install": "npx puppeteer browsers install chrome"
+    "crawler:install": "npx puppeteer browsers install chrome",
+    "test:crawl": "node tests/crawl-test.mjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
+    "@sparticuz/chromium": "^137.0.1",
     "axios": "^1.9.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "puppeteer": "^24.9.0",
+    "puppeteer-core": "^22.15.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.3.0",
