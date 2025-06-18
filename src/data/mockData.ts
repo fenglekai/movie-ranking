@@ -10,7 +10,8 @@ const sampleMovies: Movie[] = [
     genre: "科幻",
     year: 2024,
     description: "人类再次面临生存危机，刘培强等人踏上了更加危险的太空征程。",
-    type: "movie"
+    type: "movie",
+    url: "",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const sampleMovies: Movie[] = [
     description: "一部以扫黑除恶为背景的现实主义电视剧，展现了正义与邪恶的较量。",
     type: "tv",
     episodes: 39,
+    url: "",
     status: "完结"
   },
   {
@@ -34,6 +36,7 @@ const sampleMovies: Movie[] = [
     description: "明星嘉宾回归田园，体验简单朴素的慢生活，感受人与自然的和谐。",
     type: "variety",
     episodes: 12,
+    url: "",
     status: "更新中"
   },
   {
@@ -46,6 +49,7 @@ const sampleMovies: Movie[] = [
     description: "深度探索中国古代建筑艺术，揭示千年文明的建筑智慧和文化内涵。",
     type: "movie",
     episodes: 8,
+    url: "",
     status: "完结"
   },
   {
@@ -56,6 +60,7 @@ const sampleMovies: Movie[] = [
     genre: "喜剧",
     year: 2024,
     description: "一个关于自我救赎和重新开始的暖心故事，笑中带泪，温暖人心。",
+    url: "",
     type: "movie"
   }
 ];
