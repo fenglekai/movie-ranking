@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-06-17T09:29:59.434Z",
-  "lastUpdated": "2025/6/17 17:29:59",
-  "totalMovies": 30,
-  "platforms": 3,
+  "timestamp": "2025-06-18T02:47:07.633Z",
+  "lastUpdated": "2025/6/18 10:47:07",
+  "totalMovies": 120,
+  "platforms": 9,
   "data": {
     "tencentTV": [
       {
@@ -18,17 +18,6 @@
       },
       {
         "id": 2,
-        "url": "https://v.qq.com/x/search/?q=%E5%BD%BC%E5%B2%B8%E7%81%AF%E5%A1%94&stag=12",
-        "title": "彼岸灯塔",
-        "hot": null,
-        "rating": null,
-        "genre": null,
-        "year": null,
-        "description": null,
-        "platform": "tencentTV"
-      },
-      {
-        "id": 3,
         "url": "https://v.qq.com/x/search/?q=%E6%8A%98%E8%85%B0&stag=12",
         "title": "折腰",
         "hot": null,
@@ -39,7 +28,7 @@
         "platform": "tencentTV"
       },
       {
-        "id": 4,
+        "id": 3,
         "url": "https://v.qq.com/x/search/?q=%E7%BB%BD%E6%94%BE%E7%9A%84%E8%AE%B8%E5%BC%80%E5%BF%83&stag=12",
         "title": "绽放的许开心",
         "hot": null,
@@ -50,9 +39,20 @@
         "platform": "tencentTV"
       },
       {
-        "id": 5,
+        "id": 4,
         "url": "https://v.qq.com/x/search/?q=%E9%99%B7%E5%85%A5%E6%88%91%E4%BB%AC%E7%9A%84%E7%83%AD%E6%81%8B&stag=12",
         "title": "陷入我们的热恋",
+        "hot": null,
+        "rating": null,
+        "genre": null,
+        "year": null,
+        "description": null,
+        "platform": "tencentTV"
+      },
+      {
+        "id": 5,
+        "url": "https://v.qq.com/x/search/?q=%E5%BD%BC%E5%B2%B8%E7%81%AF%E5%A1%94&stag=12",
+        "title": "彼岸灯塔",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -119,8 +119,8 @@
     "tencentMovie": [
       {
         "id": 1,
-        "url": "https://v.qq.com/x/search/?q=%E5%93%AA%E5%90%92%E4%B9%8B%E9%AD%94%E7%AB%A5%E9%97%B9%E6%B5%B7&stag=12",
-        "title": "哪吒之魔童闹海",
+        "url": "https://v.qq.com/x/search/?q=%E5%A4%A7%E9%A3%8E%E6%9D%80&stag=12",
+        "title": "大风杀",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -141,6 +141,17 @@
       },
       {
         "id": 3,
+        "url": "https://v.qq.com/x/search/?q=%E5%93%AA%E5%90%92%E4%B9%8B%E9%AD%94%E7%AB%A5%E9%97%B9%E6%B5%B7&stag=12",
+        "title": "哪吒之魔童闹海",
+        "hot": null,
+        "rating": null,
+        "genre": null,
+        "year": null,
+        "description": null,
+        "platform": "tencentMovie"
+      },
+      {
+        "id": 4,
         "url": "https://v.qq.com/x/search/?q=%E5%93%AA%E5%90%92%E4%B9%8B%E9%AD%94%E7%AB%A5%E9%99%8D%E4%B8%96&stag=12",
         "title": "哪吒之魔童降世",
         "hot": null,
@@ -151,20 +162,9 @@
         "platform": "tencentMovie"
       },
       {
-        "id": 4,
+        "id": 5,
         "url": "https://v.qq.com/x/search/?q=%E9%85%B1%E5%9B%AD%E5%BC%84%C2%B7%E6%82%AC%E6%A1%88&stag=12",
         "title": "酱园弄·悬案",
-        "hot": null,
-        "rating": null,
-        "genre": null,
-        "year": null,
-        "description": null,
-        "platform": "tencentMovie"
-      },
-      {
-        "id": 5,
-        "url": "https://v.qq.com/x/search/?q=%E5%B0%81%E7%A5%9E%E7%AC%AC%E4%BA%8C%E9%83%A8%EF%BC%9A%E6%88%98%E7%81%AB%E8%A5%BF%E5%B2%90&stag=12",
-        "title": "封神第二部：战火西岐",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -185,8 +185,8 @@
       },
       {
         "id": 7,
-        "url": "https://v.qq.com/x/search/?q=%E9%9B%84%E7%8B%AE%E5%B0%91%E5%B9%B42&stag=12",
-        "title": "雄狮少年2",
+        "url": "https://v.qq.com/x/search/?q=%E5%B0%81%E7%A5%9E%E7%AC%AC%E4%BA%8C%E9%83%A8%EF%BC%9A%E6%88%98%E7%81%AB%E8%A5%BF%E5%B2%90&stag=12",
+        "title": "封神第二部：战火西岐",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -196,8 +196,8 @@
       },
       {
         "id": 8,
-        "url": "https://v.qq.com/x/search/?q=%E5%A4%A7%E9%A3%8E%E6%9D%80&stag=12",
-        "title": "大风杀",
+        "url": "https://v.qq.com/x/search/?q=%E9%9B%84%E7%8B%AE%E5%B0%91%E5%B9%B42&stag=12",
+        "title": "雄狮少年2",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -218,8 +218,8 @@
       },
       {
         "id": 10,
-        "url": "https://v.qq.com/x/search/?q=%E9%95%BF%E5%AE%89%E7%9A%84%E8%8D%94%E6%9E%9D&stag=12",
-        "title": "长安的荔枝",
+        "url": "https://v.qq.com/x/search/?q=%E5%90%91%E9%98%B3%C2%B7%E8%8A%B1&stag=12",
+        "title": "向阳·花",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -275,8 +275,8 @@
       },
       {
         "id": 5,
-        "url": "https://v.qq.com/x/search/?q=%E5%A4%A9%E8%B5%90%E7%9A%84%E5%A3%B0%E9%9F%B3%20%E7%AC%AC6%E5%AD%A3&stag=12",
-        "title": "天赐的声音 第6季",
+        "url": "https://v.qq.com/x/search/?q=%E4%BA%94%E5%8D%81%E5%85%AC%E9%87%8C%E6%A1%83%E8%8A%B1%E5%9D%9E%20%E7%AC%AC5%E5%AD%A3&stag=12",
+        "title": "五十公里桃花坞 第5季",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -286,8 +286,8 @@
       },
       {
         "id": 6,
-        "url": "https://v.qq.com/x/search/?q=%E4%BA%94%E5%8D%81%E5%85%AC%E9%87%8C%E6%A1%83%E8%8A%B1%E5%9D%9E%20%E7%AC%AC5%E5%AD%A3&stag=12",
-        "title": "五十公里桃花坞 第5季",
+        "url": "https://v.qq.com/x/search/?q=%E5%A4%A9%E8%B5%90%E7%9A%84%E5%A3%B0%E9%9F%B3%20%E7%AC%AC6%E5%AD%A3&stag=12",
+        "title": "天赐的声音 第6季",
         "hot": null,
         "rating": null,
         "genre": null,
@@ -330,14 +330,1083 @@
       },
       {
         "id": 10,
-        "url": "https://v.qq.com/x/search/?q=%E4%B8%80%E8%A7%81%E4%BD%A0%E5%B0%B1%E7%AC%91&stag=12",
-        "title": "一见你就笑",
+        "url": "https://v.qq.com/x/search/?q=%E7%8E%B0%E5%9C%A8%E5%B0%B1%E5%87%BA%E5%8F%91&stag=12",
+        "title": "现在就出发",
         "hot": null,
         "rating": null,
         "genre": null,
         "year": null,
         "description": null,
         "platform": "tencentShow"
+      }
+    ],
+    "iqiyiTV": [
+      {
+        "id": 1,
+        "url": "https://www.iqiyi.com/v_bb6gsxzz78.html",
+        "title": "临江仙",
+        "hot": "9429",
+        "rating": null,
+        "genre": "爱情 仙侠",
+        "year": 2025,
+        "description": "演员：白鹿 曾舜晞 何瑞贤 简介：讲述了四灵仙尊李青月与大成玄尊白九思相爱相杀，最终解开误会，共度劫难拯救苍生的绝美仙侠爱情故事。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 2,
+        "url": "https://www.iqiyi.com/v_257knocv1u0.html",
+        "title": "护宝寻踪",
+        "hot": "5259",
+        "rating": null,
+        "genre": "犯罪 警匪",
+        "year": 2025,
+        "description": "演员：白宇帆 辛柏青 王鹤润 简介：秦川大学考古系研究生方堃在协助追索海外流失文物时，发现白鹿原尹村的一处墓穴可能是不为人知的高等级帝陵。导师昝茂昌带其前往白鹿原实地勘察，却意外献出生命。方堃带着导师的遗愿，成长为一名考古队员。尹村未知墓穴引发考古界关注，方堃受邀参与勘察，与已成为考古队长的昔日恋人雒青重逢。方堃重提当年的猜测，引发争议和关注，也引起文物犯罪分子的觊觎。方堃、雒青以及公安局文物缉查队长齐大仓等一线文物保护工作者一起组织群众参与文物保护，与以穆见晖为首的文物犯罪团伙斗智斗勇，有力地保护了白鹿原尹村大墓及周边古迹遗存，并最终发现“亚字形”大墓，使藏于地下千年的汉太宗兹陵重现人间。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 3,
+        "url": "https://www.iqiyi.com/v_28b3s5tlqlw.html",
+        "title": "无忧渡",
+        "hot": "4883",
+        "rating": null,
+        "genre": "自制 古装",
+        "year": 2025,
+        "description": "演员：任嘉伦 宋祖儿 宣言 简介：繁华的广平城，人妖共存，妖擅长隐匿形迹，伪装成人，却不被人所知。富家千金半夏有一双奇怪的眼睛，经常能看到那些子虚乌有的影子。因为这个，无论她多么循规蹈矩、乖巧懂事，仍会被人在背地叫做“疯子”。半夏戳破了堂嫂是妖的秘密，引来追杀，就此和捉妖师宣夜相识。宣夜对半夏眼睛的轻轻一吻，让她彻底看清了这个人妖共存的世界。他们一起调查了广平城中的碧玉梨回春、九命猫换命、《广平春晓图》一日轮回等多起诡异之事后，关系日渐亲密。但宣夜背负的秘密，却将半夏一次次推开，因为他逐渐发现，自己虽身为捉妖师，却很有可能也是妖……",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 4,
+        "url": "https://www.iqiyi.com/v_k6ga53ya6g.html",
+        "title": "白月梵星",
+        "hot": "4850",
+        "rating": null,
+        "genre": "仙侠 爱情",
+        "year": 2025,
+        "description": "演员：白鹿 敖瑞鹏 代露娃 简介：凡人少女白烁（白鹿 饰）自小寻仙问道，在意外结识极域妖王梵樾（敖瑞鹏 饰）后，二人共同踏上开启上古神物无念石之路，为集齐“爱恨杀贪善”五念，在宁安城/异人城/静幽山/石城/菩提村经历了种种考验，二人一路携手斗邪怪、除恶妖，从互相利用到互生爱意、双向奔赴，甜虐交织，成长励志。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 5,
+        "url": "https://www.iqiyi.com/v_1hk3olejfr4.html",
+        "title": "法网缉凶",
+        "hot": "4813",
+        "rating": null,
+        "genre": "罪案 剧情",
+        "year": 2025,
+        "description": "演员：刘怡潼 张晓谦 缪婷茹 简介：伴随着24年前的“CH试剂案”主案犯丁桥在海外落网并与其手中重要的“CH3试剂”一同押送回国，海州市接连的出现命案，警察查到谁，谁就莫名毙命，这让刑警队长孙正阳百思不得其解，他开始怀疑，这和二十多年前的那桩旧案有着密切关系。最重要的是，他怀疑自己的搭档，新到任的楚白可能与犯罪集团有关联，毕竟他的父亲就是二十多年前那桩旧案的主要负责人楚江河，并在当年朝自己的父亲，时任刑警队长的孙永安开枪导致父亲重伤，而后，楚江河一直下落不明，伴随着调查的一点点深入，孙正阳对楚白的怀疑与日俱增，直到有一天，楚白把枪顶在了孙正阳身后。然而，孙正阳没想到，这一切只是局长高平布下的一张网，目的就是查明那场陈年旧案的真相",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 6,
+        "url": "https://www.iqiyi.com/v_1c00si2pzhw.html",
+        "title": "淮水竹亭",
+        "hot": "4303",
+        "rating": null,
+        "genre": "爱情 自制",
+        "year": 2025,
+        "description": "演员：刘诗诗 张云龙 吴宣仪 简介：故事讲述了神火山庄大小姐东方淮竹去南垂平妖，偶遇行侠仗义的面具团老大王权弘业，两人深入南垂腹地，大战南垂妖皇。净化世界的神火与破开天地的一剑将携手撕开笼罩圈外的黑暗迷雾！",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 7,
+        "url": "https://www.iqiyi.com/v_2dkhwocyjk4.html",
+        "title": "人生若如初见",
+        "hot": "4300",
+        "rating": null,
+        "genre": "年代 近代",
+        "year": 2025,
+        "description": "演员：李现 春夏 魏大勋 简介：故事以百年前，庚子之变为时代背景，在神州大地满目疮痍之际，出身清宗室梁乡（李现 饰）意外结识革命志士杨凯之（魏大勋 饰），不同身份的两人因不同原因被选为最早一批赴日学习的军事生，并因此认识了同为学生的新军人士李人骏（周游 饰），一同踏上了远赴日本士官学校学习的深造之旅。他们与革命志士吴天白（朱亚文 饰）、开文堂的二小姐谢菽红（春夏 饰）相遇，从此，五个人的命运被大时代编织在了一起。此间，清宗室、革命派、北洋集团等各方势力较量不断，最终，革命党人推翻了封建帝制，迎来辛亥革命的巨浪。而谢菽红也见证了杨一帆（宋宁峰 饰）等人在新思潮的启迪下继续前行，认清了复兴的必由之路，迎来了新民主主义革命的曙光。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 8,
+        "url": "https://www.iqiyi.com/v_25ltrdm1rl8.html",
+        "title": "莲花楼",
+        "hot": "3871",
+        "rating": null,
+        "genre": "古装 武侠",
+        "year": 2023,
+        "description": "演员：成毅 曾舜晞 肖顺尧 简介：该剧讲述了闻名武林的四顾门门主李相夷在一次大战后身受重伤，从此退隐江湖成为淡泊名利的“假神医”李莲花，在遇到新交方多病与旧敌笛飞声后重新卷入江湖的故事。江湖暗流涌动，疑团扑朔迷离，抽丝剥茧方能断出真相，一段荡气回肠的侠义情即将热血展开。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 9,
+        "url": "https://www.iqiyi.com/v_obm13e6c30.html",
+        "title": "爱你",
+        "hot": "3862",
+        "rating": null,
+        "genre": "爱情 偶像",
+        "year": 2025,
+        "description": "演员：张凌赫 徐若晗 王宥钧 简介：酒店客房部经理沈惜凡是一个工作狂，因为常常高强度工作患有失眠偏头痛， 因此去看中医，在青春的尾巴上邂逅了温润俊秀的中医何苏叶，然而她经常因工作繁忙忘记取药，每每都令何苏叶很是头疼。原本以为两人仅限于医患关系，却没想到他们竟然住在同一个小区。而正是一次次的不期而遇，让两人之间的情愫慢慢萌芽。沈惜凡因为曾经有一段失败的初恋而小心翼翼，何苏叶也曾遭初恋女友抛弃，自此关闭心扉。沈惜凡渐渐靠近何苏叶，何苏叶在和沈惜凡的“别扭”相处中，逐渐明白爱的真谛，开始反向追求。而何苏叶对中医事业的坚定与努力也引导沈惜凡认清自己，最终找到自己的理想。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 10,
+        "url": "https://www.iqiyi.com/v_jl5od8ik2s.html",
+        "title": "灭罪",
+        "hot": "3680",
+        "rating": null,
+        "genre": "悬疑 犯罪",
+        "year": 2025,
+        "description": "演员：费启鸣 王晓赟子 叶祖新 简介：讲述了宁真童年时期目睹父亲遇害现场，母亲离奇失踪，刑警队长陆征为查清真相惨遭杀害，现场留下的神秘符号“深渊”，将宁真、陆征的女儿陆凡和徒弟曹进几人的命运紧密相连，多年后，“深渊”再现，连环命案，迷雾重重，仿佛陷入无法逃脱的宿命的故事。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 11,
+        "url": "https://www.iqiyi.com/v_19rroc615w.html",
+        "title": "琅琊榜",
+        "hot": "3672",
+        "rating": null,
+        "genre": "古装 宫廷",
+        "year": 2015,
+        "description": "演员：胡歌 刘涛 王凯 简介：《琅琊榜》是根据海宴同名小说改编的大型古装传奇电视剧。该剧以平反冤案、扶持明君、振兴山河为主线，讲述了“麒麟才子”梅长苏才冠绝伦、以病弱之躯拨开重重迷雾、智博奸佞，为昭雪多年冤案、扶持新君所进行的一系列斗争。梅长苏在国仇家恨、兄弟情义的漩涡中见招拆招、游刃有余，奏出了“江左梅郎”赤子之心下的一曲慷慨悲歌。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 12,
+        "url": "https://www.iqiyi.com/v_1tdv2zxeje0.html",
+        "title": "绝密较量",
+        "hot": "3641",
+        "rating": null,
+        "genre": "悬疑 都市",
+        "year": 2025,
+        "description": "演员：张鲁一 高圆圆 曹炳琨 简介：燕平市国家安全局三处副处长杨光在一次行动中意外卷入了一场涉及国际间谍组织的阴谋。随着一连串的意外事件接连发生，杨光与他所带领的三处成员意识到他们正身处于关乎国家机密泄露的危机中。杨光隐约感到这些事件背后蕴藏着惊天阴谋，于是带领着三处抽丝剥茧展开调查。在这一系列事件中，一个名叫赵亚苧的女人成为了调查的焦点。她的身份和行为都充满了谜团。她似乎在阻碍着真相的揭露，嫌疑重重；但又似乎在暗中推动着事态的发展，令人捉摸不定。面对敌人精心布下的陷阱，杨光并未退缩，而是选择了深入虎穴。随着事件逐步升级，貌似不同阵营的杨光与赵亚苧双双卷入复杂的漩涡，敌我难辨。而敌人也早已躲在暗处，伺机实现惊天阴谋。杨光历经磨难，但始终坚守初心，经过一系列惊心动魄的斗争和巧妙的决策，成功破获了敌人的阴谋，并粉碎了他们窃取国家机密的企图。这胜利的背后是深深的个人牺牲与道德的较量。尽管眼前的危机已经解除，但杨光与他的队员们深知，在这个充满变数的世界里，新的挑战与威胁始终如影随形。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 13,
+        "url": "https://www.iqiyi.com/v_121nxvu7x98.html",
+        "title": "宁安如梦",
+        "hot": "3624",
+        "rating": null,
+        "genre": "古装 爱情",
+        "year": 2023,
+        "description": "演员：白鹿 张凌赫 王星越 简介：姜雪宁（白鹿饰）曾费尽心机当上皇后，却在宫变中被逼自杀。现在，姜雪宁的梦想就是远离权力，主宰自己的人生。可阴差阳错她还是入宫做了伴读，成为帝师谢危（张凌赫饰）的学生，姜雪宁一边接受谢危的教导，一边暗暗筹谋，想要阻止青梅竹马燕临（周峻纬饰）即将面临的“血冠礼”事件。经过姜雪宁和谢危的运筹帷幄，燕家满门性命得保。血冠礼风波后，姜雪宁无意间卷入了朝廷剿灭平南王乱党的计划，与白月光张遮（王星越饰）一起深入敌营，危急关头姜雪宁以身为张遮挡箭，但二人白瓶有隙，终是无法相守。敌国大月来犯，长公主沈芷衣（刘些宁饰）毅然踏上和亲之路。姜雪宁为解救好友沈芷衣随谢危北上讨伐大月，重重危机中谢危为保护姜雪宁甚至不惜伤害自己，二人日渐生情。然更大的阴谋逐渐浮出水面，竟直指二十年前平南王事件的真相。最终姜雪宁与谢危联手揭开了当年真相，姜雪宁也用爱感化了谢危，二人终成眷属。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 14,
+        "url": "https://www.iqiyi.com/v_mscze4lfao.html",
+        "title": "我是刑警",
+        "hot": "3623",
+        "rating": null,
+        "genre": "罪案 警匪",
+        "year": 2024,
+        "description": "演员：于和伟 富大龙 丁勇岱 简介：谨以此片向七一勋章获得者、全国公安系统一级英模崔道植，全国公安系统一级英模、最美奋斗者、刑侦专家乌国庆，以及奋战在基层一线的广大刑侦民警致以崇高的敬意。90年代的中昌省河昌市，基层民警秦川凭借自身努力求学深造，终于如愿成为一名刑警。在师父高建设、好友叶茂生壮烈牺牲后，秦川更加坚定了自己捍卫正义，制裁犯罪分子的决心，先后参与侦破多起案件，逐渐成长为中昌刑侦队伍中的优秀代表。刑侦事业需要培养新人，中昌省公安厅特邀刑事技术专家曹忠恕被秦川的才干和专注所打动，首席刑侦专家武英德更是经过严格考察，收秦川为徒。在疑难积案、恶性大案的侦破过程中，武英德、曹忠恕和秦川、陶维志、李文、赵飞等老中青三代刑警共同努力，用实战培养了一批更加现代化、专业化的年轻刑侦干警。一线刑警们对于刑侦事业的执着与投入，也感染着他们的下一代，实现着警魂的薪火相传。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 15,
+        "url": "https://www.iqiyi.com/v_186njga2r64.html",
+        "title": "唐朝诡事录之西行",
+        "hot": "3600",
+        "rating": null,
+        "genre": "古装 悬疑",
+        "year": 2024,
+        "description": "演员：杨旭文 杨志刚 郜思雯 简介：公元712年，唐睿宗改元延和，大唐依旧繁盛寰宇，但繁华之下依然危机四伏、山雨欲来。一股股势力借机蠢蠢欲动，更引起民间诡案频发，大理寺少卿卢凌风和乾陵丞苏无名又将遇到怎样的志怪谜局？西行之路，境遇难测。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 16,
+        "url": "https://www.iqiyi.com/v_fegk9db89c.html",
+        "title": "在人间",
+        "hot": "3537",
+        "rating": null,
+        "genre": "科幻 奇幻",
+        "year": 2025,
+        "description": "演员：赵丽颖 尹昉 张一山 简介：这是一场与自我和解的治愈之旅。成年人的世界，庸常的生活，悄然无声侵蚀心灵，一边崩溃一边自愈，受伤的内心缝缝又补补。孤独，如随城市繁华，日夜轮回地卷进钢筋水泥的幽暗密林之中，找不到出口的光亮，也寻不见属于自己的天空。后视镜中的对望，逐渐卸掉伪装与防备的两个人，在爱中救赎、在爱中灵魂拥抱。真实与虚幻叠加，悬念与解谜交织，情感与救赎共生，自我即是归途。再看人间，不再孤单。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 17,
+        "url": "https://www.iqiyi.com/v_21bivc1c9tc.html",
+        "title": "北上",
+        "hot": "3523",
+        "rating": null,
+        "genre": "励志 剧情",
+        "year": 2025,
+        "description": "演员：白鹿 欧豪 翟子路 简介：围绕几个在运河沿岸一起长大的少男少女，远离成长的运河家乡花街，时隔多年再度重聚，在历经竞争和生活的重压后，重新看到新生活希望的故事。通过这群江南少年的视角，不仅让观众目睹他们的成长轨迹，更感受到百余年来大运河从断流到新生的沧桑历史，体会博大厚重的中国运河文化在历史的长河中生生不息。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 18,
+        "url": "https://www.iqiyi.com/v_xkt6z3z798.html",
+        "title": "狂飙",
+        "hot": "3478",
+        "rating": null,
+        "genre": "罪案 警匪",
+        "year": 2023,
+        "description": "演员：张译 张颂文 李一桐 简介：由金牌导演徐纪周执导，张译、张颂文、李一桐、张志坚、吴刚领衔主演，倪大红、韩童生、李建义特邀主演的中央政法委重点项目。一部扫黑除恶坚决斗争的回忆录，横跨20年的群像叙事全景式展现时代变迁下的黑白较量与复杂人性。",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 19,
+        "url": "https://www.iqiyi.com/v_106mafjjemg.html",
+        "title": "仙台有树",
+        "hot": "3347",
+        "rating": null,
+        "genre": "爱情 仙侠",
+        "year": 2025,
+        "description": "演员：邓为 向涵之 陈鑫海 简介：仙修奇才苏易水，在十八年前被师父沐清歌改变天命，一向离经叛道的“女魔头”沐清歌也为此背负污名死去。十八年后，沐清歌化为薛冉冉，而已继任西山派掌门的苏易水将体弱濒死的冉冉收入门下，誓要护她一世周全，自此师徒身份对调互换，两人之间会发生哪些啼笑皆非的故事呢？",
+        "platform": "iqiyiTV"
+      },
+      {
+        "id": 20,
+        "url": "https://www.iqiyi.com/v_1hgyraojqjc.html",
+        "title": "终极笔记",
+        "hot": "3237",
+        "rating": null,
+        "genre": "青春 奇幻",
+        "year": 2020,
+        "description": "演员：曾舜晞 肖宇梁 哈妮克孜 简介：原本只对三叔经历感兴趣的吴邪历险归来后收到神秘录像带，发觉自己被卷入一场阴谋中。他只身探险格尔木疗养院，偶遇张起灵等人，组成六人小队结伴而行。在西王母宫中意外发现神秘陨玉，却不想此时三叔突然失踪、张起灵失忆；为帮助张起灵寻回记忆，众人一路探索，发现张家古楼正是关键所在，却因为裘德考势力的介入不得而终。霍老太突然出面与吴邪等人联手，复制当年九门的联合行动再次去张家古楼探寻真相，不料在行动中突发意外，众人陷入危机。至此谜团未解，各方势力失衡，吴邪被迫戴上面具伪装成三叔。",
+        "platform": "iqiyiTV"
+      }
+    ],
+    "iqiyiMovie": [
+      {
+        "id": 1,
+        "url": "https://www.iqiyi.com/v_1cz2cug3st0.html",
+        "title": "阳光照耀青春里",
+        "hot": "4860",
+        "rating": null,
+        "genre": "剧情 普通话",
+        "year": 2025,
+        "description": "演员：肖央 简介：年轻有才的程序员何立为供职于家园软件公司，并独自开发了一款游戏。他的偏执和作为扰乱了公司的融资计划，被公司送进了“青春里”精神康复院。\n康复院里，何立为认识了形形色色的病友，也经历了不少啼笑皆非的故事。其中女病人林春春总是与何立为发生种种纠葛，两颗心逐渐走近。何立为的哥哥何立刚拒绝接何立为出院，医院总务主任洪兆庆也不断压制着何立为的种种出格行为。何立为为了证明自己没有得病，百般尝试，希望早日逃出青春里。直到有一天，他看到了春春脑中的幻觉，而随后发生的一系列事情也让他开始迷惑，究竟什么才是正常的世界，自己想“逃出”的到底又是什么……",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 2,
+        "url": "https://www.iqiyi.com/v_172zc2veixg.html",
+        "title": "冲·撞",
+        "hot": "4008",
+        "rating": null,
+        "genre": "喜剧 运动",
+        "year": 2025,
+        "description": "演员：李九霄 王千源 潘斌龙 简介：号称“沙坪坝博尔特”的外卖小哥刘勇敢，召集三十个兄弟，组成一支叫“码头工”的屌丝橄榄球队，一路逆袭，最终打败勇士国际联队，夺得永恒碗冠军。一群莽汉，将生活中的蝇营狗苟化为球场上的洪荒之力，在冲冲撞撞中成为真正的兄弟伙！",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 3,
+        "url": "https://www.iqiyi.com/v_19rrcuke28.html",
+        "title": "哪吒之魔童降世",
+        "hot": "3509",
+        "rating": null,
+        "genre": "喜剧 动画",
+        "year": 2019,
+        "description": "演员：吕艳婷 囧森瑟夫 简介：天地灵气孕育出一颗能量巨大的混元珠，元始天尊将混元珠提炼成灵珠和魔丸，灵珠投胎为人，助周伐纣时可堪大用；而魔丸则会诞出魔王，为祸人间。元始天尊启动了天劫咒语，3年后天雷将会降临，摧毁魔丸。太乙受命将灵珠托生于陈塘关李靖家的儿子哪吒身上。然而阴差阳错，灵珠和魔丸竟然被掉包。本应是灵珠英雄的哪吒却成了混世大魔王。调皮捣蛋顽劣不堪的哪吒却徒有一颗做英雄的心。然而面对众人对魔丸的误解和即将来临的天雷的降临，哪吒是否命中注定会立地成魔？他将何去何从？",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 4,
+        "url": "https://www.iqiyi.com/v_swko5zgi5o.html",
+        "title": "向阳·花",
+        "hot": "3488",
+        "rating": null,
+        "genre": "犯罪 剧情",
+        "year": 2025,
+        "description": "演员：赵丽颖 兰西雅 啜妮 简介：锒铛入狱，天崩开局，刑满释放女囚如何困境求生？为给女儿购买价值20万的人工耳蜗，高月香铤而走险，被判刑入狱，却因这段经历结识了黑妹、邓虹、胡萍、郭爱美。她们虽然性格不同，但却都有“和生活硬碰硬”的态度，不服输、不认命的她们，面对命运挑战一路为彼此撑腰，向阳而生。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 5,
+        "url": "https://www.iqiyi.com/v_1x0t0lwi1ps.html",
+        "title": "苍茫的天涯是我的爱",
+        "hot": "3408",
+        "rating": null,
+        "genre": "喜剧 公路",
+        "year": 2025,
+        "description": "演员：曾毅 周奇 孙艺洲 简介：古板遇上鬼马，铁树遇上火花。阴差阳错，让司机老赵和青年于虹踏上乌龙之旅。两人一路火花带闪电，欢声笑语掀翻半个中国。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 6,
+        "url": "https://www.iqiyi.com/v_17rfvv09j88.html",
+        "title": "绝命列车",
+        "hot": "3324",
+        "rating": null,
+        "genre": "惊悚 犯罪",
+        "year": 2024,
+        "description": "演员：拉克什·拉尔瓦尼 拉加夫·朱亚尔 坦娅·曼尼克塔拉 简介：影片主要讲述了在一列疾驰的火车上。主角阿特是一名身怀绝技的突击特种兵，为救女友图里卡及其家人，踏上了一场生死未卜的旅程。面对由40名穷凶极恶的强盗组成的武装集团，阿特孤身奋战，与歹徒们在狭窄的车厢内展开了一场惊心动魄的近身搏斗。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 7,
+        "url": "https://www.iqiyi.com/v_1uw6ck0wii8.html",
+        "title": "黄沙漫天",
+        "hot": "3250",
+        "rating": null,
+        "genre": "喜剧 战争",
+        "year": 2025,
+        "description": "演员：小沈阳 周大勇 林乐炫 简介：一座孤城，两个骗子，三方势力。\n骗子贾毅征伪装成特派员骗得了县城协防军司令胡锭邦的一笔巨款，在逃亡到县城的过程中，阴差阳错被与日本人秘密合作并图谋叛国的县长谢千里当成了真特派员，两人各怀鬼胎，为了自己的利益使出浑身解数尔虞我诈，过程中上演啼笑皆非的荒诞大戏。经过一系列遭遇后，最终贾毅征投身正义，加入革命抗日道路。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 8,
+        "url": "https://www.iqiyi.com/v_1yyr1d2bw44.html",
+        "title": "唐探1900",
+        "hot": "3133",
+        "rating": null,
+        "genre": "喜剧 悬疑",
+        "year": 2025,
+        "description": "演员：王宝强 刘昊然 简介：1900年，在美国旧金山唐人街，华裔印第安猎人阿鬼与留美青年秦福因一场凶杀案偶然结识，误打误撞组成“唐人街神探”组合。开启了一场笑闹探案之旅……",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 9,
+        "url": "https://www.iqiyi.com/v_kot52osmlg.html",
+        "title": "制暴：无限杀机",
+        "hot": "3103",
+        "rating": null,
+        "genre": "动作 救援",
+        "year": 2025,
+        "description": "演员：杰森·斯坦森 简介：莱文是一名英国士兵退伍后转行做起了建筑工人。老板女儿珍妮也与莱文关系甚佳。珍妮在外出游玩时不幸被人贩绑架。莱文听闻消息后，他从珍妮失踪的酒吧一路追查到一个叫迪米的人。莱文靠假意合作打入该组织，最终找到了迪米藏匿人贩的地点，成功救出了珍妮。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 10,
+        "url": "https://www.iqiyi.com/v_sz2jbonnv0.html",
+        "title": "扫毒风暴",
+        "hot": "3055",
+        "rating": null,
+        "genre": "警匪 犯罪",
+        "year": 2025,
+        "description": "演员：高戈 牟凤彬 王婉中 简介：缉毒警康苗追踪大毒枭“老鹞”，惊现其竟是失散兄长雷霆！12年恩怨揭晓，雷霆为救风灵被迫为毒枭卖命。猫鼠游戏升级，兄弟枪口相对！当正义与亲情碰撞，雷霆以命换救赎，康苗坚守信仰，誓破毒网！看人性挣扎，品正邪对决，禁毒路上，每一步都充满血与泪！",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 11,
+        "url": "https://www.iqiyi.com/v_1v5is0doi1k.html",
+        "title": "静夜厮杀",
+        "hot": "3035",
+        "rating": null,
+        "genre": "犯罪 动作",
+        "year": 2023,
+        "description": "演员： 简介：吉姆一家因为黑帮火并失去了儿子，自己也被重伤失声，生活陷入绝望。出院后的他在仇恨驱使下，从普通人变成复仇机器，着手复仇计划，誓要铲除杀害儿子的凶手，引爆最后的修罗场。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 12,
+        "url": "https://www.iqiyi.com/v_1ovyusjpjzc.html",
+        "title": "猎虎",
+        "hot": "2922",
+        "rating": null,
+        "genre": "西部 动作",
+        "year": 2025,
+        "description": "演员：斯力更 诺敏达来（男演员） 王潇 简介：毒贩张虎杀死抓捕他的警察后逃跑，三年后，张虎手下的贩毒团伙找到了黑车司机李军逼迫其运货，禁毒队长唐旭东说服李军当线人，李军为了拿线人费给妻子看病答应了唐，开始了危险重重的线人行动。随着事情发展，远远超出了唐的计划，李军还有着更大的目的。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 13,
+        "url": "https://www.iqiyi.com/v_1iggnxorzrk.html",
+        "title": "九叔之钟馗归来",
+        "hot": "2654",
+        "rating": null,
+        "genre": "惊悚 悬疑",
+        "year": 2025,
+        "description": "演员：邢启鑫 郭吟 董一泽 简介：民国时期，兴乌镇中医九叔在钱家祭祖时，钱小姐被勒死。九叔发现凶手留下钟馗玉佩，怀疑与钱老爷有仇。凶手再次行凶，九叔与警察队长梁连生暗中追查。最终发现凶手是丁牧，他为祭奠自缢的弟弟丁远而杀人。丁牧伏法，九叔救出被劫的钱巧云，小镇恢复平静。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 14,
+        "url": "https://www.iqiyi.com/v_ukp1hpg17k.html",
+        "title": "雄狮少年2",
+        "hot": "2625",
+        "rating": null,
+        "genre": "动画 喜剧",
+        "year": 2024,
+        "description": "演员：大昕 郭皓（配音） 大雄（配音） 简介：来上海打工的无名之辈阿娟，为了赚钱给父亲治病，同意代表没落的传武拳馆参加“上海格斗之夜”武术比赛，为此他必须战胜所有的高手、偏见和自己。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 15,
+        "url": "https://www.iqiyi.com/v_1v4faakmrbk.html",
+        "title": "恋曲尘封",
+        "hot": "2614",
+        "rating": null,
+        "genre": "爱情 剧情",
+        "year": 2025,
+        "description": "演员：蒋雯丽 黄轩 简介：擅长画画的辍学少年轩，发现了一本被藏匿了多年的日记，轩被日记中18年前的女孩打动，并在现实生活中遇到了日记的主人岚。出于欲望和好奇，他开始利用日记， 在岚面前一幕幕还原出当年的情景，这场“狩猎”却让18岁的少年第一次陷入了炽烈的爱情。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 16,
+        "url": "https://www.iqiyi.com/v_1hb58vkafeg.html",
+        "title": "头脑特工队2",
+        "hot": "2587",
+        "rating": null,
+        "genre": "喜剧 少儿",
+        "year": 2024,
+        "description": "演员：艾米·波勒 简介：影片讲述了刚步入青春期的小女孩莱莉脑海中的复杂情绪进行的一场奇妙冒险。在她的大脑总部，正经历着一场突如其来的大拆迁，为意想不到的新情绪腾出空间。一直以来配合默契的情绪小伙伴乐乐、忧忧、怒怒、怕怕和厌厌，在新情绪焦焦的突然到来时变得不知所措，并且她看起来不是孤身一人。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 17,
+        "url": "https://www.iqiyi.com/v_1ibil5tmxw8.html",
+        "title": "护卫者3：决战",
+        "hot": "2554",
+        "rating": null,
+        "genre": "动作 搞笑",
+        "year": 2025,
+        "description": "演员：聂荣鑫 向佐 赵燕国彰 简介：该片讲述了新人保镖高天，为了解救被绑架的未婚妻，被意外卷入到一起调查犯罪集团的卧底行动中，在高天与警方卧底猎鹰的配合下，他历尽千难万险，九死一生，最终成功解救出未婚妻，并将犯罪分子全部绳之于法的故事。",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 18,
+        "url": "https://www.iqiyi.com/v_2f7iiofrtb0.html",
+        "title": "猎毒风暴",
+        "hot": "2532",
+        "rating": null,
+        "genre": "警匪 犯罪",
+        "year": 2025,
+        "description": "演员：张冬 黄海冰 简介：边境毒枭猖獗，缉毒警察殊死较量！副队长萧若兰在围剿毒贩行动中不幸落入圈套，生死未卜，而她的替身却潜入警队。大毒枭陈强布局已久，正策划更大规模的毒品交易。真假萧若兰的对决、毒贩内部的勾心斗角、枪林弹雨的绝境搏杀！当真相浮出水面，谁能笑到最后？",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 19,
+        "url": "https://www.iqiyi.com/v_1sdrjjzzwok.html",
+        "title": "风水轮流转",
+        "hot": "2474",
+        "rating": null,
+        "genre": "喜剧 剧情",
+        "year": 2025,
+        "description": "演员：崔志佳 李昆鹰 简介：人的一生 ，都是在追逐自己虚幻的梦想。 \n成熟的标志 … …不过是自己终于发现自己不可能成功。  … …名和利 ，我都要 … …这就是我的人生。 \n努力了 ，梦想就会实现？世界最大的谎言 ！",
+        "platform": "iqiyiMovie"
+      },
+      {
+        "id": 20,
+        "url": "https://www.iqiyi.com/v_1c00si2nsk0.html",
+        "title": "误杀3",
+        "hot": "2376",
+        "rating": null,
+        "genre": "犯罪 悬疑",
+        "year": 2024,
+        "description": "演员：肖央 佟丽娅 段奕宏 简介：郑炳睿的宝贝女儿婷婷众目睽睽之下，遭神秘绑匪绑架，始终陪伴父女左右的李慧萍与他一同展开救女行动。但狡诈绑匪轻松躲避警方负责人张景贤的密集追捕，更将救女心切的郑、李二人玩弄于股掌之间。绝望间，郑炳睿选择走上了一条通往地狱的救女之路，纵使化身“修罗”也不能放过伤害自己女儿的恶徒！殊不知一场更大的阴谋正在悄然展开，所有卷入其中的人都无法逃脱。",
+        "platform": "iqiyiMovie"
+      }
+    ],
+    "iqiyiShow": [
+      {
+        "id": 1,
+        "url": "https://www.iqiyi.com/v_199a222zaeg.html",
+        "title": "哈哈哈哈哈第5季",
+        "hot": "7670",
+        "rating": null,
+        "genre": "真人秀 爱奇艺出品",
+        "year": 2025,
+        "description": "演员：邓超 陈赫 范志毅 简介：第五季，五哈团即将再次出发，共同探索祖国的更多未知美丽角落！期待和他们一起踏上“神金之巅”吧～",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 2,
+        "url": "https://www.iqiyi.com/v_1yjwn33vfos.html",
+        "title": "奔跑吧第9季",
+        "hot": "6472",
+        "rating": null,
+        "genre": "竞技 游戏",
+        "year": 2025,
+        "description": "演员：李晨 郑恺 沙溢 简介：和李晨，郑恺，沙溢，白鹿，周深，范丞丞，宋雨琦，张真源，孟子义，李昀锐一起自由奔跑拥抱松弛生活，丢掉烦恼与治愈和美好交手。这一次和奔跑吧轻装上阵！ 已切换“轻量化”模式，共同奔赴一段轻松愉悦的新旅程吧！ ​​​",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 3,
+        "url": "https://www.iqiyi.com/v_23ce1uwwyu0.html",
+        "title": "新说唱2025",
+        "hot": "6083",
+        "rating": null,
+        "genre": "竞演 音乐",
+        "year": 2025,
+        "description": "演员：黄子韬 万妮达 严浩翔 简介：《新说唱2025》官宣明星制作人：黄子韬、万妮达Vinida Weng&时代少年团 严浩翔、TizzyT谢锐韬。本季延续说唱一贯强竞技的赛制，吸引更多主流艺人加入，展现说唱音乐的多元性，节目不止会呈现选手间的说唱竞演，明星制作人参与共同创作引爆出更多Hitsong，升级节目赛制的肃杀感和真人秀环节的趣味性，增设新环节玩法，丰富节目的可持续观赏性，全方位展示华语说唱的魅力。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 4,
+        "url": "https://www.iqiyi.com/v_21cj4qkt1bs.html",
+        "title": "种地吧第3季",
+        "hot": "5568",
+        "rating": null,
+        "genre": "真人秀 青春成长",
+        "year": 2025,
+        "description": "演员：陈少熙 何浩楠 蒋敦豪 简介：十个勤天将继续建设后陡门，结合农文旅发展优势，打造一个农产品交流集散中心，吸收各地优秀特产，为“新农人”们提供更优质的宣传平台，产销贯通，回馈土地，持续发力。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 5,
+        "url": "https://www.iqiyi.com/v_1fjrcpfz550.html",
+        "title": "哈哈哈哈哈第4季",
+        "hot": "3694",
+        "rating": null,
+        "genre": "真人秀 爱奇艺出品",
+        "year": 2024,
+        "description": "演员：邓超 陈赫 鹿晗 简介：每年三个“怨种”兄弟邓超、陈赫、鹿晗，总会一起出门旅行。过往三年的国内壮游给了五哈旅行社迈向世界的信心，今年正式通知各位，旅行业务全面升级，出境游线路指日可待！带着“情比金坚”的兄弟们，和一肚子“坏水”的节目组，“真男人们”即将开始一场世界级的草率旅行…",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 6,
+        "url": "https://www.iqiyi.com/v_1ywo2xgwjrg.html",
+        "title": "天赐的声音第6季",
+        "hot": "3648",
+        "rating": null,
+        "genre": "竞演 音乐",
+        "year": 2025,
+        "description": "演员：黄子弘凡 刘宇宁 谭维维 简介：本季节目以“天赐之音，鲜声绽放”为主题，新声音、新组合，为熟悉的舞台注入全新活力。节目以“\"寻找音乐中的另一半”为核心，延续“推荐金曲争夺战的热血舞台。在对话与碰撞中，老将新生同台共振，合力打磨品质金曲，寻求品质音乐与专业审美的回归，共创属于这个时代的\"天赐之音”。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 7,
+        "url": "https://www.iqiyi.com/v_1o7ljye2olc.html",
+        "title": "种地吧",
+        "hot": "3575",
+        "rating": null,
+        "genre": "爱奇艺出品 经营",
+        "year": 2023,
+        "description": "演员：陈少熙 何浩楠 蒋敦豪 简介：这是一个关于汗水、泥土和成长的青春实验故事。10位青春阳光的少年踏实地用180天时间在142亩土地上播种、灌溉、施肥、收获，真实运营农场。少年们随着麦子一同成长，最终见证一粒种子变成麦田，看到废弃荒野变成田园诗歌。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 8,
+        "url": "https://www.iqiyi.com/v_1xe2qpnzek8.html",
+        "title": "亚洲新声",
+        "hot": "3320",
+        "rating": null,
+        "genre": "竞演 音乐",
+        "year": 2025,
+        "description": "演员：张靓颖 尤长靖 Jessie J 简介：这是一场亚洲新声代歌手的海上竞演之旅，沿海上丝绸之路一路寻找具有震撼全世界能力的亚洲之声。他们从中国上海出发，途经日本冲绳、越南下龙湾、新加坡、马来西亚巴生，再回到中国香港，层层挑战。在各国殿堂级歌手全程见证下，诞生新一代“亚洲歌王”。 在这里，三十二组新声歌手将经过三十天行程、五大赛区挑战，遇到实力强劲的多国对手，结交惺惺相惜的亚洲朋友，共同争夺新一代亚洲歌王的桂冠！",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 9,
+        "url": "https://www.iqiyi.com/v_z6x1xrqidw.html",
+        "title": "种地吧第2季",
+        "hot": "3263",
+        "rating": null,
+        "genre": "爱奇艺出品 真人秀",
+        "year": 2024,
+        "description": "演员：陈少熙 何浩楠 蒋敦豪 简介：《种地吧》第二季，农田种植面积扩大，10位少年将解锁全新农业种植领域，提升个人劳动技能，以企业做大做强展现“科技助农，产业兴农”，以脚踏实地的劳动书写当代青年的成长诗歌！",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 10,
+        "url": "https://www.iqiyi.com/v_wbm9c2lvm8.html",
+        "title": "哈哈哈哈哈——很高兴遇到你",
+        "hot": "3214",
+        "rating": null,
+        "genre": "爱奇艺出品 旅行",
+        "year": 2020,
+        "description": "演员：邓超 陈赫 鹿晗 简介：《哈哈哈哈哈——很高兴遇到你》是一档大型公路行进式户外真人秀，由邓超、陈赫、鹿晗组成的“5H旅行团“将开启一段由东到西，穿越中国的真实旅行，途径20多个大小城镇，行进超6000余公里。旅行团会在旅途中深入发掘祖国东西广袤美景及人文生态。更重要的是，会在各地接触当下最可爱最真实的普通人工作与生活，深入肌理，和群众一起通过劳动赚取旅途经费，展现最真实的生活方式与积极乐观的生活态度。\n在“半工半玩”的行进式旅途中，旅行团会面临各种现实问题和人在囧途的困境，“如何更好地平衡工作和生活”、 “传递幸福是奋斗出来的”价值观，也将成为旅行团的课题，也是节目重要的导向及思考方向。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 11,
+        "url": "https://www.iqiyi.com/v_16ksffewrh4.html",
+        "title": "奔跑吧第8季",
+        "hot": "3213",
+        "rating": null,
+        "genre": "竞技 游戏",
+        "year": 2024,
+        "description": "演员：李晨 郑恺 沙溢 简介：龙行龘龘，欢乐无期限！一场自由与热爱碰撞出精彩火花的旅程即将全新开启，一起奔赴春天的盛宴，享受恣意昂扬的奔跑！",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 12,
+        "url": "https://www.iqiyi.com/v_11l0g3kb8cg.html",
+        "title": "哈哈哈哈哈第3季",
+        "hot": "3136",
+        "rating": null,
+        "genre": "真人秀 爱奇艺出品",
+        "year": 2023,
+        "description": "演员：邓超 陈赫 鹿晗 简介：由邓超、陈赫、鹿晗等人组成“五哈团”，这一次他们再次出发，从北方一路向南，跨越30个纬度，从严冬到暖春，经历一场坑坑相连的破冬之旅，遇见那些在平凡中却又不平凡的人，感受属于他们的人生故事。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 13,
+        "url": "https://www.iqiyi.com/v_2emcuv9vhf4.html",
+        "title": "微笑一号店",
+        "hot": "3025",
+        "rating": null,
+        "genre": "经营 真人秀",
+        "year": 2025,
+        "description": "演员：唐国强 黄子韬 武艺 简介：35位“微笑店员”经过近一个月的专业淬炼，分组前往全国不同城市经营饮品店，从产品研发到门店运营，学员将在真实商业场景中构建精细化运营体系，以一杯饮品的温度传递城市人文关怀，以主理人身份深度诠释品牌价值。当努力与机遇在城市的烟火气中碰撞，每位探索者都将锚定属于自己的坐标。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 14,
+        "url": "https://www.iqiyi.com/v_2em20pto5l8.html",
+        "title": "新说唱2024",
+        "hot": "2959",
+        "rating": null,
+        "genre": "竞演 音乐",
+        "year": 2024,
+        "description": "演员：范丞丞 谢帝 MC法老 简介：《新说唱2024》再度回归，依旧以挖掘和呈现说唱音乐本质为初心，更加注重对选手人物状态的表达。海量新一代中文说唱音乐人将在体育馆直面导师考核；节目将发现更多优秀的新生代华语说唱歌手，创作出更具多元化符合当下审美潮流的音乐作品，用更加震撼的舞台为新一代的说唱歌手提供表达自我的机会，通过音乐态度和音乐作品的展现更加纯粹的Hiphop，记录年轻一代青年的特点。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 15,
+        "url": "https://www.iqiyi.com/v_1r813h1mnts.html",
+        "title": "健康不摸黑",
+        "hot": "2902",
+        "rating": null,
+        "genre": "脱口秀 健康",
+        "year": 2025,
+        "description": "演员：小鹿 黑灯 简介：健康脱口秀的吐槽小会",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 16,
+        "url": "https://www.iqiyi.com/v_a5tnh82ris.html",
+        "title": "哈哈哈哈哈第2季",
+        "hot": "2870",
+        "rating": null,
+        "genre": "爱奇艺出品 搞笑",
+        "year": 2021,
+        "description": "演员：邓超 陈赫 鹿晗 简介：《哈哈哈哈哈》第二季为户外旅行真人秀，由邓超、陈赫、鹿晗、郭京飞、彭昱畅等人组成“五哈团”，他们将共同开启10场始料未及的旅行，通过各种任务关卡，赢得旅行中衣食住行的必备物资，用乐观且努力的“哈哈”精神，应对生活的五味。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 17,
+        "url": "https://www.iqiyi.com/v_2btkoyrm9gg.html",
+        "title": "奔跑吧茶马古道篇",
+        "hot": "2606",
+        "rating": null,
+        "genre": "真人秀 游戏",
+        "year": 2024,
+        "description": "演员：李晨 郑恺 沙溢 简介：本次《奔跑吧》特别季以“茶马古道”为主题，兄弟团成员相约云南一起团建。从茶马古道的源头普洱开跑，途径大理、丽江、香格里拉四地，沿着茶马古道遗址，走访当地少数民族。在雨林、古城中，拥抱自然与历史，通过饮食、服饰、手工、文学等形式，深入体验西南民族特色和非遗人文底蕴，展现茶马古道上的美景与历史人文。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 18,
+        "url": "https://www.iqiyi.com/v_1xrmarwiac0.html",
+        "title": "你好种地少年第2季",
+        "hot": "2572",
+        "rating": null,
+        "genre": "爱奇艺出品 真人秀",
+        "year": 2024,
+        "description": "演员：陈少熙 何浩楠 蒋敦豪 简介：十个勤天游学再出发！主打“一个都不能少”！这场游学中，内有父母家人，外有新农人朋友，他们会去到更辽阔的地方深耕农业。温情笑闹、知识点满满的游学之路即刻启程。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 19,
+        "url": "https://www.iqiyi.com/v_2d1r2meg4aw.html",
+        "title": "喜剧之王单口季",
+        "hot": "2509",
+        "rating": null,
+        "genre": "竞演 喜剧",
+        "year": 2024,
+        "description": "演员：郭麒麟 吴镇宇 徐峥 简介：对单口喜剧行业十分关注的三位常驻嘉宾携手单口喜剧老友，向观众推荐来自全国各地脱口秀俱乐部的宝藏喜剧演员，这些喜剧小人物在节目的舞台上互相比拼，最终的T0P10进入总决赛，并决出年度单口喜剧之王。",
+        "platform": "iqiyiShow"
+      },
+      {
+        "id": 20,
+        "url": "https://www.iqiyi.com/v_19rrbfem78.html",
+        "title": "偶像练习生",
+        "hot": "2474",
+        "rating": null,
+        "genre": "爱奇艺出品 养成",
+        "year": 2018,
+        "description": "演员：张艺兴 王嘉尔 李荣浩 简介：《偶像练习生》是一档偶像男团才艺竞演真人秀节目，爱奇艺全网独播。《偶像练习生》由张艺兴担任全民制作人代表，王嘉尔和欧阳靖担任RAP导师，李荣浩任音乐导师，程潇、周洁琼任舞蹈导师，旨在从国内外经纪公司、练习生公司推荐的100名练习生当中，通过4个月的封闭训练、舞台比拼，最终优胜9人组成全新偶像男团出道。",
+        "platform": "iqiyiShow"
+      }
+    ],
+    "doubanMovie": [
+      {
+        "id": 1,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/36742579",
+        "title": "罪人",
+        "rating": 7.7,
+        "genre": [
+          "剧情",
+          "动作",
+          "惊悚",
+          "恐怖"
+        ],
+        "year": 2025,
+        "description": "导演：瑞恩·库格勒 演员：迈克尔·B·乔丹 海莉·斯坦菲尔德",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 2,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/30429388",
+        "title": "死神来了6：血脉诅咒",
+        "rating": 6.9,
+        "genre": [
+          "恐怖"
+        ],
+        "year": 2025,
+        "description": "导演：亚当·B·斯坦 扎克·利波夫斯基 演员：凯特琳·桑塔·胡安娜 特欧·布里奥尼斯",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 3,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/36990306",
+        "title": "怪化猫：火鼠",
+        "rating": 8.1,
+        "genre": [
+          "动画",
+          "悬疑",
+          "恐怖"
+        ],
+        "year": 2025,
+        "description": "导演：铃木清崇 中村健治 演员：长岛雄一 日笠阳子",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 4,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/36486109",
+        "title": "魔法农场",
+        "rating": 6.3,
+        "genre": [
+          "剧情",
+          "喜剧"
+        ],
+        "year": 2025,
+        "description": "导演：阿马莉亚·乌尔曼 演员：科洛·塞维尼 亚历克斯·沃尔夫",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 5,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/36303600",
+        "title": "回声谷",
+        "rating": 6.3,
+        "genre": [
+          "剧情",
+          "惊悚"
+        ],
+        "year": 2025,
+        "description": "导演：迈克·皮尔斯 演员：朱丽安·摩尔 西德尼·斯维尼",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 6,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/37309928",
+        "title": "铁血战士：杀戮之王",
+        "rating": 7.8,
+        "genre": [
+          "动作",
+          "科幻",
+          "动画",
+          "惊悚",
+          "冒险"
+        ],
+        "year": 2025,
+        "description": "导演：丹·特拉亨伯格 约书亚·瓦松 演员：迈克尔·比恩 道格·科克尔",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 7,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/35883131",
+        "title": "雄狮少年2",
+        "rating": 8.5,
+        "genre": [
+          "喜剧",
+          "动作",
+          "动画"
+        ],
+        "year": 2024,
+        "description": "导演：孙海鹏 演员：李昕 郭皓",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 8,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/27077476",
+        "title": "会计刺客2",
+        "rating": 6.1,
+        "genre": [
+          "剧情",
+          "动作",
+          "悬疑",
+          "惊悚",
+          "犯罪"
+        ],
+        "year": 2025,
+        "description": "导演：加文·欧康诺 演员：本·阿弗莱克 乔·博恩瑟",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 9,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/35411283",
+        "title": "阳光照耀青春里",
+        "rating": 6.7,
+        "genre": [
+          "剧情"
+        ],
+        "year": 2025,
+        "description": "导演：曾海若 演员：肖央 春夏",
+        "platform": "doubanMovie"
+      },
+      {
+        "id": 10,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/movie/36453674",
+        "title": "物质主义者",
+        "rating": 6.4,
+        "genre": [
+          "喜剧",
+          "爱情"
+        ],
+        "year": 2025,
+        "description": "导演：席琳·宋 演员：达科塔·约翰逊 克里斯·埃文斯",
+        "platform": "doubanMovie"
+      }
+    ],
+    "doubanTV": [
+      {
+        "id": 1,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36686675",
+        "title": "临江仙",
+        "rating": null,
+        "genre": [
+          "爱情",
+          "古装"
+        ],
+        "year": 2025,
+        "description": "导演：智磊 国浩 演员：白鹿 曾舜晞",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 2,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/27181010",
+        "title": "藏海传",
+        "rating": 7.1,
+        "genre": [
+          "剧情",
+          "古装"
+        ],
+        "year": 2025,
+        "description": "导演：郑晓龙 曹译文 演员：肖战 张婧仪",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 3,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/35651341",
+        "title": "长安的荔枝",
+        "rating": 6.9,
+        "genre": [
+          "剧情",
+          "古装"
+        ],
+        "year": 2025,
+        "description": "导演：曹盾 演员：雷佳音 岳云鹏",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 4,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/35656030",
+        "title": "七根心简",
+        "rating": null,
+        "genre": [
+          "剧情",
+          "奇幻",
+          "冒险"
+        ],
+        "year": 2025,
+        "description": "导演：蔡岳勋 演员：刘浩存 宋威龙",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 5,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/35496391",
+        "title": "无忧渡",
+        "rating": 7.5,
+        "genre": [
+          "剧情",
+          "奇幻",
+          "古装"
+        ],
+        "year": 2025,
+        "description": "导演：林玉芬 梁胜权 曹华 黄肖英 演员：任嘉伦 宋祖儿",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 6,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/35316582",
+        "title": "折腰",
+        "rating": 6.4,
+        "genre": [
+          "爱情",
+          "古装"
+        ],
+        "year": 2025,
+        "description": "导演：邓科 高琮凯 王奕丁 演员：宋祖儿 刘宇宁",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 7,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36067147",
+        "title": "陷入我们的热恋",
+        "rating": 6.5,
+        "genre": [
+          "剧情",
+          "爱情"
+        ],
+        "year": 2025,
+        "description": "导演：柳广辉 演员：刘浩存 王安宇",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 8,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36656706",
+        "title": "无尽的尽头",
+        "rating": 8.3,
+        "genre": [
+          "剧情",
+          "犯罪"
+        ],
+        "year": 2025,
+        "description": "导演：臧溪川 演员：任素汐 高伟光",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 9,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36490015",
+        "title": "护宝寻踪",
+        "rating": 7.2,
+        "genre": [
+          "剧情"
+        ],
+        "year": 2025,
+        "description": "导演：惠楷栋 演员：白宇帆 辛柏青",
+        "platform": "doubanTV"
+      },
+      {
+        "id": 10,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36467256",
+        "title": "灵笼 第二季",
+        "rating": 8.8,
+        "genre": [
+          "动作",
+          "科幻",
+          "动画"
+        ],
+        "year": 2025,
+        "description": "导演：董相博 演员：夏一可 图特哈蒙",
+        "platform": "doubanTV"
+      }
+    ],
+    "doubanShow": [
+      {
+        "id": 1,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/37080187",
+        "title": "开始推理吧 第三季",
+        "rating": 8.4,
+        "genre": [
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演： 演员：白宇 迪丽热巴",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 2,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36666524",
+        "title": "克拉克森的农场 第四季",
+        "rating": 9.5,
+        "genre": [
+          "喜剧",
+          "纪录片",
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演：凯特·林奇·罗宾森 演员：杰里米·克拉克森 凯勒布·库珀",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 3,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36942820",
+        "title": "旷野星球",
+        "rating": null,
+        "genre": [
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演： 演员：魏大勋 易立竞",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 4,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/37260149",
+        "title": "奔跑吧 第九季",
+        "rating": null,
+        "genre": [
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演：姚译添 演员：李晨 郑恺",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 5,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/37054768",
+        "title": "哈哈哈哈哈 第五季",
+        "rating": 7.5,
+        "genre": [
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演： 演员：邓超 陈赫",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 6,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/37112005",
+        "title": "乘风2025",
+        "rating": 5.2,
+        "genre": [
+          "音乐",
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演：任洋 演员：叶童 邓萃雯",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 7,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/37110424",
+        "title": "歌手2025",
+        "rating": 4.3,
+        "genre": [
+          "音乐",
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演：张丹阳 王志钊 演员：陈楚生 白举纲",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 8,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/37054771",
+        "title": "新说唱2025",
+        "rating": null,
+        "genre": [
+          "音乐",
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演：左近 演员：黄子韬 严浩翔",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 9,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/36095086",
+        "title": "麻花特开心 第二季",
+        "rating": null,
+        "genre": [
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演： 演员：沈腾 马丽",
+        "platform": "doubanShow"
+      },
+      {
+        "id": 10,
+        "url": "https://www.douban.com/doubanapp/dispatch?uri=/tv/37081289",
+        "title": "你的爱",
+        "rating": 7.4,
+        "genre": [
+          "爱情",
+          "同性",
+          "真人秀"
+        ],
+        "year": 2025,
+        "description": "导演： 演员：金里辕 朴熙荣",
+        "platform": "doubanShow"
       }
     ]
   }
