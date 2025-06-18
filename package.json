@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "crawler": "node scripts/crawler.js",
-    "crawler:install": "npx puppeteer browsers install chrome",
-    "test:crawl": "node tests/crawl-test.mjs"
+    "crawler:install": "npx puppeteer browsers install chrome"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
