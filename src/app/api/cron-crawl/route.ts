@@ -528,26 +528,19 @@ function saveData(data: { [key: string]: MovieData[] }) {
   return finalData;
 }
 
-// 主爬取函数
-export async function GET(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  
-  // 简单的认证检查（可选）
-  if (process.env.CRON_SECRET && authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
-
+// 后台爬取函数
+async function performCrawlInBackground() {
   let browser: any = null;
   
   try {
-    console.log('🚀 开始定时爬取任务...');
+    console.log('🚀 开始后台定时爬取任务...');
     
     // 启动浏览器
     browser = await getBrowserInstance();
 
     const results: { [key: string]: MovieData[] } = {};
     
-    // 批量爬取所有平台（减少平台数量以提高成功率）
+    // 批量爬取所有平台
     const platformIds = Object.keys(platforms);
     
     for (const platformId of platformIds) {
@@ -573,29 +566,48 @@ export async function GET(request: NextRequest) {
     // 保存数据
     const finalData = saveData(results);
     
-    console.log('✅ 定时爬取任务完成');
-    
-    return NextResponse.json({
-      success: true,
-      message: '爬取完成',
-      totalMovies: finalData.totalMovies,
-      platforms: finalData.platforms,
-      lastUpdated: finalData.lastUpdated,
-      timestamp: finalData.timestamp
-    });
+    console.log('✅ 后台定时爬取任务完成');
+    console.log(`📊 爬取结果: ${finalData.totalMovies} 部影视作品，来自 ${finalData.platforms} 个平台`);
 
   } catch (error) {
-    console.error('❌ 爬取任务失败:', error);
-    
-    return NextResponse.json({
-      success: false,
-      error: error instanceof Error ? error.message : '爬取失败',
-      timestamp: new Date().toISOString()
-    }, { status: 500 });
-
+    console.error('❌ 后台爬取任务失败:', error);
   } finally {
     if (browser) {
       await browser.close();
     }
+  }
+}
+
+// 主爬取函数
+export async function GET(request: NextRequest) {
+  const authHeader = request.headers.get('authorization');
+  
+  // 简单的认证检查（可选）
+  if (process.env.CRON_SECRET && authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  try {
+    // 立即启动后台爬取任务（不等待完成）
+    performCrawlInBackground().catch(error => {
+      console.error('后台爬取任务异常:', error);
+    });
+    
+    // 立即返回成功响应
+    return NextResponse.json({
+      success: true,
+      message: '爬取任务已启动，正在后台执行',
+      startTime: new Date().toISOString(),
+      timestamp: new Date().toLocaleString('zh-CN')
+    });
+
+  } catch (error) {
+    console.error('❌ 启动爬取任务失败:', error);
+    
+    return NextResponse.json({
+      success: false,
+      error: error instanceof Error ? error.message : '启动任务失败',
+      timestamp: new Date().toISOString()
+    }, { status: 500 });
   }
 } 
